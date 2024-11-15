@@ -41,7 +41,7 @@
 ###
 
 <div align="left">
-  <a href="mailto:sinisiquintanaitalo@gmail.com" target="_blank">
+  <a href="http://www.ejemplo.com">sinisiquintanaitalo@gmail.com</a>" target="_blank">
     <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="gmail logo"  />
   </a>
   <a href="https://www.linkedin.com/in/italo-fabio-sinisi-quintana" target="_blank">
