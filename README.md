@@ -1,55 +1,164 @@
-<br clear="both">
+# 🚀 Italo Fabio Sinisi Quintana
 
-<h2 align="left">👨‍💻<br>Hello! 👋<br>I'm Italo, a data analyst, self-taught programmer, and a true tech enthusiast 🚀.</h2>
+<div align="center">
+  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/italo-fabio-sinisi-quintana/)
+[![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/51977170609)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sinisiquintanaitalo@gmail.com)
 
-###
+*Data Analyst | Cloud Computing | Machine Learning Enthusiast*
 
-<p align="left">I am a professional with solid experience in programming and data analysis, specializing in Python, SQL, Power BI, and Excel. I have worked in data analysis and engineering across industries like call centers, retail, and finance, developing innovative solutions to:<br><br>🔍 Extract valuable insights from large datasets.<br>🔄 Design and implement efficient ETL processes.<br>📊 Build high-impact predictive models.<br>My background in Construction Management has strengthened my skills in data manipulation and visualization, as well as in creating interactive reports and dashboards that optimize business decision-making.<br><br>🌟 What sets me apart?<br><br>📡 Effective communication.<br>💡 Critical thinking and the ability to solve complex problems.<br>🌐 Experience with data architecture in the cloud and advanced statistical analysis.<br>🎯 Professional Goal<br>My mission is to drive data-driven decision-making and deliver business value through innovation and excellence in data analysis.<br><br>🚀 Always eager to learn and seeking new professional opportunities to continue growing. Let’s connect!</p>
-
-###
-
-<div align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="30" alt="vscode logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="30" alt="python logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" height="30" alt="pandas logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" height="30" alt="jupyter logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="30" alt="mysql logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" height="30" alt="postgresql logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" height="30" alt="mongodb logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="30" alt="git logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/anaconda/anaconda-original.svg" height="30" alt="anaconda logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="30" alt="javascript logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-line-wordmark.svg" height="30" alt="amazonwebservices logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" height="30" alt="azure logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vim/vim-original.svg" height="30" alt="vim logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" height="30" alt="linux logo"  />
 </div>
 
-###
+---
 
-<div align="left">
-  <a href="https://wa.me/51977170609" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Whatsapp&logo=whatsapp&label=&color=25D366&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="whatsapp logo"  />
-  </a>
-  <a href="https://signal.me/#p/51977170609" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Signal&logo=signal&label=&color=039BE5&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="signal logo"  />
-  </a>
-  <a href="https://www.linkedin.com/in/italo-fabio-sinisi-quintana" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="linkedin logo"  />
-  </a>
+## 👨‍💻 Sobre Mí
+
+**Data Analyst especializado** con más de **3 años de experiencia** transformando datos en insights accionables. Mi pasión por la tecnología y el análisis de datos me impulsa a crear soluciones innovadoras que generen valor empresarial real.
+
+```python
+class ItaloSinisi:
+    def __init__(self):
+        self.role = "Data Analyst"
+        self.experience = "3+ años"
+        self.location = "Lima, Perú"
+        self.passion = ["Data Analysis", "Cloud Computing", "Machine Learning"]
+        self.mission = "Impulsar decisiones basadas en datos"
+    
+    def get_skills(self):
+        return {
+            "languages": ["Python", "SQL", "JavaScript"],
+            "cloud": ["AWS", "GCP", "Azure"],
+            "visualization": ["Power BI", "Tableau", "Excel"],
+            "data_engineering": ["ETL", "Apache Spark", "Databricks"],
+            "methodologies": ["SCRUM", "Agile"]
+        }
+```
+
+---
+
+## 🛠️ Stack Tecnológico
+
+<div align="center">
+
+### 💻 Lenguajes & Herramientas
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+
+### ☁️ Cloud & Big Data
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
+![GCP](https://img.shields.io/badge/GCP-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)
+![Azure](https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoft-azure&logoColor=white)
+![Databricks](https://img.shields.io/badge/Databricks-FF3621?style=for-the-badge&logo=databricks&logoColor=white)
+![Apache Spark](https://img.shields.io/badge/Apache_Spark-E25A1C?style=for-the-badge&logo=apache-spark&logoColor=white)
+
+### 📊 Análisis & Visualización
+![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=power-bi&logoColor=black)
+![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![Scikit-learn](https://img.shields.io/badge/Scikit_learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+
+### 🔧 Desarrollo & Productividad
+![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
+
 </div>
 
-###
+---
+
+## 💼 Experiencia Profesional
+
+### 🏢 UBYCALL – Pizza Hut Salvador
+**Analista de Datos Call Center** | *Feb 2023 - Nov 2024*
+
+- 📈 **Incrementé las conversiones en 15%** mediante análisis de KPIs y optimización de procesos
+- 🔍 Desarrollé sistema de informes para identificar patrones en llamadas, mejorando la satisfacción del cliente
+- 📊 Creé dashboards interactivos en Power BI para monitoreo en tiempo real
+- 👥 Supervisé equipos de agentes optimizando procesos mediante análisis de datos
+
+### 🏦 ALFIN BANCO
+**Analista Financiero** | *Mar 2022 - Dic 2022*
+
+- 🎯 **Reduje el porcentaje de impagos** mediante modelos de riesgo financiero optimizados
+- 📋 Automaticé procesos con Python, mejorando la eficiencia en generación de informes
+- 💡 Implementé tableros en Power BI para seguimiento efectivo de clientes
+- ⚡ Desarrollé scripts de automatización para recopilación de datos
+
+---
+
+## 📊 Proyectos Destacados
+
+<div align="center">
+
+| Proyecto | Tecnologías | Impacto |
+|----------|-------------|---------|
+| 🔄 **Sistema ETL Automatizado** | Python, SQL, AWS | Reducción 60% tiempo procesamiento |
+| 📈 **Dashboard Predictivo** | Power BI, Machine Learning | Incremento 15% conversiones |
+| 🎯 **Modelo de Riesgo Financiero** | Python, Scikit-learn | Reducción impagos significativa |
+| 📞 **Análisis Call Center** | Genesys Cloud, SQL | Mejora satisfacción cliente |
+
+</div>
+
+---
+
+## 📈 GitHub Analytics
+
+<div align="center">
+  
+[![Italo's GitHub stats](https://github-readme-stats.vercel.app/api?username=TU_USERNAME&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117)](https://github.com/TU_USERNAME)
+
+[![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=TU_USERNAME&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117)](https://github.com/TU_USERNAME)
+
+</div>
+
+---
+
+## 🎓 Formación & Certificaciones
+
+- 🏗️ **Egresado en Administración de Obras** - SENCICO
+- 🐍 **Python & Data Analysis** - EDTEAM
+- 💾 **SQL Database Management** - EDTEAM
+- 📊 **Power BI Specialist** - EDTEAM
+- 🌐 **REST API Development** - EDTEAM
+- ☁️ **Genesys Cloud Certified**
+- 🔄 **SCRUM Methodology**
+
+---
+
+## 🎯 Objetivos 2025
+
+```mermaid
+graph LR
+    A[Machine Learning] --> B[Advanced Analytics]
+    B --> C[Cloud Architecture]
+    C --> D[Data Engineering]
+    D --> E[Leadership Skills]
+```
+
+- 🤖 Profundizar en **Machine Learning** y **Deep Learning**
+- ☁️ Obtener certificaciones **AWS/GCP Professional**
+- 👥 Liderar equipos de **Data Science**
+- 🚀 Contribuir a proyectos **Open Source**
+
+---
+
+## 📫 ¡Conectemos!
+
+<div align="center">
+
+**¿Tienes un proyecto interesante? ¡Hablemos!**
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Conectar-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/italo-fabio-sinisi-quintana/)
+[![WhatsApp](https://img.shields.io/badge/WhatsApp-Contactar-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/51977170609)
+[![Email](https://img.shields.io/badge/Email-Escribir-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sinisiquintanaitalo@gmail.com)
+
+---
+
+*"Los datos son el nuevo petróleo, pero la analítica es la refinería"* 📊✨
+
+**⭐ Si te gusta mi trabajo, no olvides dar una estrella a mis repositorios**
+
+</div>
