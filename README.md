@@ -50,7 +50,7 @@ Full Stack Developer and Data Analyst with 5+ years of experience in software an
 
 - Responsible for the design, development, deployment and operation of the BI area's internal platforms.
 - Built **RutaLiquidador**, the delivery and route settlement platform that reduced the order rejection rate **from 7% to 1%** and gave the office real-time GPS control of the truck fleet.
-- Built field sales applications, a sales contest engine, automated WhatsApp reporting and usage analytics on top of the company ERP.
+- Built field sales applications, automated WhatsApp reporting and usage analytics on top of the company ERP.
 - Introduced containerized deployments, CI/CD pipelines and automated testing across projects.
 
 ### Call Center Data Analyst — UBYCALL
@@ -146,7 +146,6 @@ Each morning the company dispatches trucks across Lima, each with a crew of thre
 | Project | Outcome |
 |:---|:---|
 | **Ventory Multicanal**<br>Field sales platform | Lets companies verify their field sales teams. It handles selfie and GPS attendance, detects fake locations, rooted devices and impossible travel speeds, and syncs offline sales without ever duplicating one. A fiber internet edition checks coverage on the device.<br><i>FastAPI · PostgreSQL · React Native · React</i> |
-| **Portal de Concursos**<br>Sales contest engine | Turns each contest's rules into read-only ERP queries and recalculates 14 contests every business day. Validated with **zero discrepancies across 281,788 rows**.<br><i>Next.js · FastAPI · SQL Server</i> |
 | **Capturas de Preventa**<br>Pre-sales report bot | Replaced a manual process by delivering 225 report combinations to WhatsApp groups on a schedule, with no duplicate sends. Covered by about 350 tests. In production.<br><i>Python · FastAPI · Playwright · Node.js</i> |
 | **AurenPulse**<br>Internal usage analytics | Shows leadership who uses each internal system, for how long, and who stopped using it. It is read-only at two levels and its login has brute-force protection.<br><i>FastAPI · PostgreSQL · Docker</i> |
 | **AUSPEX**<br>Sales supervisor dashboard | Gives supervisors live team rankings, inactivity alerts and audited access. A migration to Node.js, PostgreSQL and React Native is in progress.<br><i>Google Apps Script · Node.js · TypeScript</i> |
@@ -239,7 +238,7 @@ Desarrollador Full Stack y Analista de Datos con más de 5 años de experiencia 
 
 - Responsable del diseño, desarrollo, despliegue y operación de las plataformas internas del área de BI.
 - Construí **RutaLiquidador**, la plataforma de reparto y liquidación de rutas que redujo la tasa de rechazo de pedidos **de 7% a 1%** y le dio a la oficina control GPS de la flota en tiempo real.
-- Construí aplicaciones de fuerza de ventas, un motor de concursos comerciales, reportes automáticos por WhatsApp y analítica de uso sobre el ERP de la empresa.
+- Construí aplicaciones de fuerza de ventas, reportes automáticos por WhatsApp y analítica de uso sobre el ERP de la empresa.
 - Introduje despliegues con contenedores, pipelines de CI/CD y pruebas automatizadas en todos los proyectos.
 
 ### Analista de Datos de Call Center — UBYCALL
@@ -335,7 +334,6 @@ Cada mañana la empresa despacha camiones por Lima, cada uno con una tripulació
 | Proyecto | Resultado |
 |:---|:---|
 | **Ventory Multicanal**<br>Plataforma de fuerza de ventas | Permite a las empresas controlar a su fuerza de ventas en campo. Registra asistencia con selfie y GPS, detecta ubicaciones falsas, celulares rooteados y velocidades imposibles, y sincroniza ventas offline sin duplicar ninguna. Una edición para venta de internet por fibra valida la cobertura en el mismo celular.<br><i>FastAPI · PostgreSQL · React Native · React</i> |
-| **Portal de Concursos**<br>Motor de concursos comerciales | Convierte las reglas de cada concurso en consultas de solo lectura al ERP y recalcula 14 concursos cada día hábil. Validado con **cero diferencias en 281,788 filas**.<br><i>Next.js · FastAPI · SQL Server</i> |
 | **Capturas de Preventa**<br>Bot de reportes de preventa | Reemplazó un proceso manual: envía 225 combinaciones de reportes a grupos de WhatsApp de forma programada y sin duplicados. Cubierto por unos 350 tests. En producción.<br><i>Python · FastAPI · Playwright · Node.js</i> |
 | **AurenPulse**<br>Analítica de uso interno | Muestra a la gerencia quién usa cada sistema interno, cuánto tiempo y quién dejó de usarlo. Es de solo lectura en dos niveles y su login tiene protección contra fuerza bruta.<br><i>FastAPI · PostgreSQL · Docker</i> |
 | **AUSPEX**<br>Dashboard de supervisores de ventas | Da a los supervisores rankings del equipo en vivo, alertas de inactividad y acceso auditado. La migración a Node.js, PostgreSQL y React Native está en curso.<br><i>Google Apps Script · Node.js · TypeScript</i> |
