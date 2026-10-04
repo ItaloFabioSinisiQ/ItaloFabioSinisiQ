@@ -108,13 +108,88 @@ Each morning the company dispatches trucks across Lima, each with a crew of thre
 | **Unreliable connectivity.** Unsent deliveries piled up until the evidence on the phone became unreadable. | Offline-first storage with an encrypted local queue, bounded size, one-day retention and automatic sync. |
 | **Manual reporting.** Supervisors and management assembled reports by hand. | Scheduled start, midday and closing reports by email and WhatsApp, with no duplicate sends, and a drill-down from period to driver, customer and product. |
 
-<br>
+</details>
+
+### Promotion engine
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/engine-flow-dark.svg">
+  <img src="assets/engine-flow-light.svg" width="100%" alt="Promotion engine decision order: each free-goods line from the ERP invoice is checked as progressive N+M, tiered by range, combo and discount as free goods. A match identifies the promotion and recalculates the bonus on partial rejection; no match goes to manual review and is never guessed. Validated on 2,000 cases, all correct.">
+</picture>
+
+### Architecture
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/architecture-dark.svg">
+  <img src="assets/architecture-light.svg" width="100%" alt="RutaLiquidador architecture. Data sources: ERP on SQL Server, fleet GPS tracker and OSRM routing with self-hosted Lima maps. Platform core: FastAPI backend with the promotion engine, route settlement and delivery log, offline conflict resolution and audit trail, a scheduler with 12 background jobs, and PostgreSQL 16 with 47 tables. Clients: offline-first React Native driver app, React control tower with 27 views and a WhatsApp gateway. Delivery: Docker Compose, Nginx, GitHub Actions and scripted releases with rollback.">
+</picture>
+
+### End-to-end flow
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/swimlane-dark.svg">
+  <img src="assets/swimlane-light.svg" width="100%" alt="End-to-end flow by actor across five stages. Morning sync: the ERP provides orders, invoices and promotions; the backend syncs at 06:00 and retries hourly until noon; each phone receives its route and crew. On the route: the driver app works with offline maps and an encrypted queue, and sends GPS to the control tower's live fleet map. At the stop: each stop is recorded as delivered, partial or rejected with photo, GPS and line quantities, and syncs when signal returns. Validation: the backend runs the promotion engine and conflict checks, the control tower shows fraud signals and rejection follow-up, and an alert fires when more than PEN 1,000 is left uncollected. Close: settlement per crew member, office corrections with audit trail, and closing reports by email and WhatsApp.">
+</picture>
+
+### Engineering
+
+- **Quality:** more than 7,700 automated tests (pytest, Jest, Vitest, Playwright) and mutation testing on pull requests.
+- **Delivery:** six CI workflows gate every release. Releases are scripted with a backup, a smoke test and automatic rollback, with about 15 seconds of downtime.
+- **Performance:** rewriting one query cut a critical path from 4.9 s to 7 ms (about 700× faster).
+- **Data-driven decisions:** collisions were measured before the conflict screen was built, and the end-of-day alert time was set from real stop data. An unused job writing 278,000 rows a day was retired.
+- **AI-assisted, review-gated:** I use AI coding tools every day, but every change still has to pass tests, mutation testing and CI.
+
+**Stack:** Python · FastAPI · SQLAlchemy · Alembic · PostgreSQL · SQL Server · TypeScript · React · Vite · Tailwind CSS · React Native · Expo · MapLibre · OSRM · Docker · Nginx · GitHub Actions
+
+## Other projects
+
+| Project | Outcome |
+|:---|:---|
+| **Ventory Multicanal**<br>Field sales platform | Lets companies verify their field sales teams. It handles selfie and GPS attendance, detects fake locations, rooted devices and impossible travel speeds, and syncs offline sales without ever duplicating one. A fiber internet edition checks coverage on the device.<br><i>FastAPI · PostgreSQL · React Native · React</i> |
+| **Portal de Concursos**<br>Sales contest engine | Turns each contest's rules into read-only ERP queries and recalculates 14 contests every business day. Validated with **zero discrepancies across 281,788 rows**.<br><i>Next.js · FastAPI · SQL Server</i> |
+| **Capturas de Preventa**<br>Pre-sales report bot | Replaced a manual process by delivering 225 report combinations to WhatsApp groups on a schedule, with no duplicate sends. Covered by about 350 tests. In production.<br><i>Python · FastAPI · Playwright · Node.js</i> |
+| **AurenPulse**<br>Internal usage analytics | Shows leadership who uses each internal system, for how long, and who stopped using it. It is read-only at two levels and its login has brute-force protection.<br><i>FastAPI · PostgreSQL · Docker</i> |
+| **AUSPEX**<br>Sales supervisor dashboard | Gives supervisors live team rankings, inactivity alerts and audited access. A migration to Node.js, PostgreSQL and React Native is in progress.<br><i>Google Apps Script · Node.js · TypeScript</i> |
+| **TomaPedidos**<br>Order suggestion engine · in design | Will suggest what to offer each customer based on repurchase cycles and basket affinity, and will be validated by replaying nine years of sales history.<br><i>Python · PostgreSQL · LightGBM</i> |
+
+These systems belong to the companies I build them for, so the repositories are private. I'm happy to walk through the architecture and code in an interview.
+
+## Skills
+
+| Area | Technologies |
+|:---|:---|
+| Backend | Python, FastAPI, SQLAlchemy, Alembic, Pydantic, APScheduler, Node.js, Express, Prisma, REST APIs, JWT |
+| Frontend | TypeScript, React, Next.js, Vite, Tailwind CSS, Leaflet, MapLibre, Recharts, ECharts |
+| Mobile | React Native, Expo, offline-first sync, encrypted local storage, background GPS |
+| Data and BI | PostgreSQL, SQL Server, SQLite, ETL pipelines, ERP integration, Pandas, scikit-learn, Power BI (DAX) |
+| DevOps and quality | Docker, Docker Compose, Nginx, Linux, GitHub Actions, pytest, Jest, Vitest, Playwright, mutation testing |
+| Languages | Python, TypeScript, JavaScript, SQL, Rust |
+| Domains | Logistics and last-mile delivery, field sales, FMCG distribution, credit risk, business intelligence |
+
+## Education and certifications
+
+- **Bachelor's in Systems & Computer Engineering** — Universidad Privada del Norte (UPN) <sub>in progress</sub>
+- Microsoft Certified: Power BI Data Analyst Associate (PL-300)
+- Certified ScrumMaster (CSM) — Scrum Alliance
+- Genesys Cloud certification — Genesys
+- Python and Data Analysis · SQL Databases · REST API Development — EDTEAM
+
+Currently preparing for AWS Certified Solutions Architect – Associate.
 
 ---
 
+<p align="center">
+  Open to new opportunities. The fastest way to reach me is <a href="mailto:sinisiquintanaitalo@gmail.com">email</a>, or <a href="https://github.com/ItaloFabioSinisiQ/ItaloFabioSinisiQ/raw/main/cv/Italo-Sinisi-CV-EN.pdf">download my CV</a>.
+</p>
+
+<br>
+
 <a name="espanol"></a>
+<details>
+<summary><picture><source media="(prefers-color-scheme: dark)" srcset="assets/spanish-panel-dark.svg"><img src="assets/spanish-panel-light.svg" width="94%" align="top" alt="Versión en español: haz clic para ver el perfil completo en español"></picture></summary>
+<br>
+
 <p align="right">
-  <a href="https://github.com/settings/appearance"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/theme-dark.svg"><img src="assets/theme-light.svg" height="30" align="left" alt="Tema: claro u oscuro"></picture></a>
   <a href="https://github.com/ItaloFabioSinisiQ/ItaloFabioSinisiQ/raw/main/cv/Italo-Sinisi-CV-ES.pdf"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cv-button-es-dark.svg"><img src="assets/cv-button-es-light.svg" height="30" alt="Descargar CV (PDF)"></picture></a>
   <a href="#english"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/lang-en-dark.svg"><img src="assets/lang-en-light.svg" height="30" alt="View in English"></picture></a>
   <a href="#espanol"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/lang-es-active-dark.svg"><img src="assets/lang-es-active-light.svg" height="30" alt="Español (actual)"></picture></a>
@@ -221,3 +296,79 @@ Cada mañana la empresa despacha camiones por Lima, cada uno con una tripulació
 | **Sin visibilidad de la flota.** La oficina no sabía dónde estaban los camiones ni qué rutas estaban detenidas. | Mapa de la flota en vivo mediante un proxy seguro al rastreador GPS, con cada ruta marcada como en curso, detenida, cerrada o sin iniciar. |
 | **Conectividad poco confiable.** Las entregas sin enviar se acumulaban hasta que la evidencia en el celular se volvía ilegible. | Almacenamiento offline con cola local cifrada, tamaño acotado, retención de un día y sincronización automática. |
 | **Reportes manuales.** Supervisores y gerencia armaban los reportes a mano. | Reportes programados de inicio, mediodía y cierre por correo y WhatsApp, sin envíos duplicados, y un análisis con detalle por periodo, chofer, cliente y producto. |
+
+</details>
+
+### Motor de promociones
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/engine-flow-es-dark.svg">
+  <img src="assets/engine-flow-es-light.svg" width="100%" alt="Orden de decisión del motor de promociones: cada línea de regalo de la boleta del ERP se evalúa como progresiva N+M, por rango, combo y descuento como regalo. Si coincide, se identifica la promoción y se recalcula el regalo ante un rechazo parcial; si no coincide, pasa a revisión manual y nunca se adivina. Validado en 2,000 casos, todos correctos.">
+</picture>
+
+### Arquitectura
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/architecture-es-dark.svg">
+  <img src="assets/architecture-es-light.svg" width="100%" alt="Arquitectura de RutaLiquidador. Fuentes de datos: ERP en SQL Server, rastreador GPS de la flota y ruteo OSRM con mapas propios de Lima. Núcleo: backend FastAPI con el motor de promociones, la liquidación de rutas y la bitácora, la resolución de conflictos offline y la auditoría, un scheduler con 12 tareas programadas y PostgreSQL 16 con 47 tablas. Clientes: app del chofer offline-first en React Native, torre de control en React con 27 vistas y gateway de WhatsApp. Despliegue: Docker Compose, Nginx, GitHub Actions y releases automatizados con rollback.">
+</picture>
+
+### Flujo de punta a punta
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/swimlane-es-dark.svg">
+  <img src="assets/swimlane-es-light.svg" width="100%" alt="Flujo de punta a punta por actor en cinco etapas. Sync matutino: el ERP entrega pedidos, boletas y promociones; el backend sincroniza a las 06:00 y reintenta cada hora hasta el mediodía; cada celular recibe su ruta y tripulación. En ruta: la app del chofer funciona con mapas offline y una cola cifrada, y envía el GPS al mapa de la flota en vivo de la torre de control. En la parada: cada parada se registra como entregada, parcial o rechazada con foto, GPS y cantidades por línea, y sincroniza al volver la señal. Validación: el backend ejecuta el motor de promociones y el control de choques, la torre de control muestra señales de fraude y el seguimiento de rechazos, y se envía una alerta cuando quedan más de S/ 1,000 sin cobrar. Cierre: liquidación por tripulante, correcciones de oficina con auditoría y reportes de cierre por correo y WhatsApp.">
+</picture>
+
+### Ingeniería
+
+- **Calidad:** más de 7,700 tests automatizados (pytest, Jest, Vitest, Playwright) y mutation testing en cada pull request.
+- **Despliegue:** seis workflows de CI validan cada versión antes de publicarla. Los despliegues son automatizados, con backup, smoke test y rollback automático, y unos 15 segundos de interrupción.
+- **Rendimiento:** reescribir una consulta redujo un proceso crítico de 4.9 s a 7 ms (unas 700 veces más rápido).
+- **Decisiones basadas en datos:** los choques entre tripulantes se midieron antes de construir la pantalla de conflictos, y la hora de la alerta de cierre se fijó con datos reales de las paradas. Se retiró un proceso sin uso que escribía 278,000 filas al día.
+- **Desarrollo asistido por IA, con control:** uso herramientas de IA a diario, pero cada cambio debe superar tests, mutation testing y CI.
+
+**Stack:** Python · FastAPI · SQLAlchemy · Alembic · PostgreSQL · SQL Server · TypeScript · React · Vite · Tailwind CSS · React Native · Expo · MapLibre · OSRM · Docker · Nginx · GitHub Actions
+
+## Otros proyectos
+
+| Proyecto | Resultado |
+|:---|:---|
+| **Ventory Multicanal**<br>Plataforma de fuerza de ventas | Permite a las empresas controlar a su fuerza de ventas en campo. Registra asistencia con selfie y GPS, detecta ubicaciones falsas, celulares rooteados y velocidades imposibles, y sincroniza ventas offline sin duplicar ninguna. Una edición para venta de internet por fibra valida la cobertura en el mismo celular.<br><i>FastAPI · PostgreSQL · React Native · React</i> |
+| **Portal de Concursos**<br>Motor de concursos comerciales | Convierte las reglas de cada concurso en consultas de solo lectura al ERP y recalcula 14 concursos cada día hábil. Validado con **cero diferencias en 281,788 filas**.<br><i>Next.js · FastAPI · SQL Server</i> |
+| **Capturas de Preventa**<br>Bot de reportes de preventa | Reemplazó un proceso manual: envía 225 combinaciones de reportes a grupos de WhatsApp de forma programada y sin duplicados. Cubierto por unos 350 tests. En producción.<br><i>Python · FastAPI · Playwright · Node.js</i> |
+| **AurenPulse**<br>Analítica de uso interno | Muestra a la gerencia quién usa cada sistema interno, cuánto tiempo y quién dejó de usarlo. Es de solo lectura en dos niveles y su login tiene protección contra fuerza bruta.<br><i>FastAPI · PostgreSQL · Docker</i> |
+| **AUSPEX**<br>Dashboard de supervisores de ventas | Da a los supervisores rankings del equipo en vivo, alertas de inactividad y acceso auditado. La migración a Node.js, PostgreSQL y React Native está en curso.<br><i>Google Apps Script · Node.js · TypeScript</i> |
+| **TomaPedidos**<br>Motor de pedido sugerido · en diseño | Sugerirá qué ofrecer a cada cliente a partir de ciclos de recompra y afinidad de canasta, y se validará reproduciendo nueve años de historial de ventas.<br><i>Python · PostgreSQL · LightGBM</i> |
+
+Estos sistemas pertenecen a las empresas para las que los construyo, por eso los repositorios son privados. Con gusto explico la arquitectura y el código en una entrevista.
+
+## Habilidades
+
+| Área | Tecnologías |
+|:---|:---|
+| Backend | Python, FastAPI, SQLAlchemy, Alembic, Pydantic, APScheduler, Node.js, Express, Prisma, APIs REST, JWT |
+| Frontend | TypeScript, React, Next.js, Vite, Tailwind CSS, Leaflet, MapLibre, Recharts, ECharts |
+| Móvil | React Native, Expo, sincronización offline-first, almacenamiento local cifrado, GPS en segundo plano |
+| Datos y BI | PostgreSQL, SQL Server, SQLite, pipelines ETL, integración con ERP, Pandas, scikit-learn, Power BI (DAX) |
+| DevOps y calidad | Docker, Docker Compose, Nginx, Linux, GitHub Actions, pytest, Jest, Vitest, Playwright, mutation testing |
+| Lenguajes | Python, TypeScript, JavaScript, SQL, Rust |
+| Sectores | Logística y reparto de última milla, fuerza de ventas, consumo masivo, riesgo crediticio, inteligencia de negocios |
+
+## Educación y certificaciones
+
+- **Ingeniería de Sistemas Computacionales** — Universidad Privada del Norte (UPN) <sub>en curso</sub>
+- Microsoft Certified: Power BI Data Analyst Associate (PL-300)
+- Certified ScrumMaster (CSM) — Scrum Alliance
+- Certificación Genesys Cloud — Genesys
+- Python y Análisis de Datos · Bases de Datos SQL · Desarrollo de APIs REST — EDTEAM
+
+Actualmente me preparo para la certificación AWS Certified Solutions Architect – Associate.
+
+---
+
+<p align="center">
+  Abierto a nuevas oportunidades. La forma más rápida de contactarme es por <a href="mailto:sinisiquintanaitalo@gmail.com">correo</a>, o <a href="https://github.com/ItaloFabioSinisiQ/ItaloFabioSinisiQ/raw/main/cv/Italo-Sinisi-CV-ES.pdf">descarga mi CV</a>.
+</p>
+
+</details>
