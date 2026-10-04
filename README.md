@@ -123,13 +123,20 @@ Each morning the company dispatches trucks across Lima, each with a crew of thre
   <img src="assets/architecture-light.svg" width="100%" alt="RutaLiquidador architecture. Data sources: ERP on SQL Server, fleet GPS tracker and OSRM routing with self-hosted Lima maps. Platform core: FastAPI backend with the promotion engine, route settlement and delivery log, offline conflict resolution and audit trail, a scheduler with 12 background jobs, and PostgreSQL 16 with 47 tables. Clients: offline-first React Native driver app, React control tower with 27 views and a WhatsApp gateway. Delivery: Docker Compose, Nginx, GitHub Actions and scripted releases with rollback.">
 </picture>
 
+### End-to-end flow
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/swimlane-dark.svg">
+  <img src="assets/swimlane-light.svg" width="100%" alt="End-to-end flow by actor across five stages. Morning sync: the ERP provides orders, invoices and promotions; the backend syncs at 06:00 and retries hourly until noon; each phone receives its route and crew. On the route: the driver app works with offline maps and an encrypted queue, and sends GPS to the control tower's live fleet map. At the stop: each stop is recorded as delivered, partial or rejected with photo, GPS and line quantities, and syncs when signal returns. Validation: the backend runs the promotion engine and conflict checks, the control tower shows fraud signals and rejection follow-up, and an alert fires when more than PEN 1,000 is left uncollected. Close: settlement per crew member, office corrections with audit trail, and closing reports by email and WhatsApp.">
+</picture>
+
 ### Engineering
 
 - **Quality:** more than 7,700 automated tests (pytest, Jest, Vitest, Playwright) and mutation testing on pull requests.
 - **Delivery:** six CI workflows gate every release. Releases are scripted with a backup, a smoke test and automatic rollback, with about 15 seconds of downtime.
-- **Performance:** a query rewrite took a critical path from 4.9 s to 7 ms (about 700× faster).
+- **Performance:** rewriting one query cut a critical path from 4.9 s to 7 ms (about 700× faster).
 - **Data-driven decisions:** collisions were measured before the conflict screen was built, and the end-of-day alert time was set from real stop data. An unused job writing 278,000 rows a day was retired.
-- **AI-assisted, review-gated:** I use AI coding tools every day, and every change still has to pass tests, mutation testing and CI.
+- **AI-assisted, review-gated:** I use AI coding tools every day, but every change still has to pass tests, mutation testing and CI.
 
 **Stack:** Python · FastAPI · SQLAlchemy · Alembic · PostgreSQL · SQL Server · TypeScript · React · Vite · Tailwind CSS · React Native · Expo · MapLibre · OSRM · Docker · Nginx · GitHub Actions
 
@@ -142,7 +149,7 @@ Each morning the company dispatches trucks across Lima, each with a crew of thre
 | **Capturas de Preventa**<br>Pre-sales report bot | Replaced a manual process by delivering 225 report combinations to WhatsApp groups on a schedule, with no duplicate sends. Covered by about 350 tests. In production.<br><i>Python · FastAPI · Playwright · Node.js</i> |
 | **AurenPulse**<br>Internal usage analytics | Shows leadership who uses each internal system, for how long, and who stopped using it. It is read-only at two levels and its login has brute-force protection.<br><i>FastAPI · PostgreSQL · Docker</i> |
 | **AUSPEX**<br>Sales supervisor dashboard | Gives supervisors live team rankings, inactivity alerts and audited access. A migration to Node.js, PostgreSQL and React Native is in progress.<br><i>Google Apps Script · Node.js · TypeScript</i> |
-| **TomaPedidos**<br>Order suggestion engine · in design | Will suggest what to offer each customer from repurchase cycles and basket affinity, validated by replaying nine years of sales history.<br><i>Python · PostgreSQL · LightGBM</i> |
+| **TomaPedidos**<br>Order suggestion engine · in design | Will suggest what to offer each customer based on repurchase cycles and basket affinity, and will be validated by replaying nine years of sales history.<br><i>Python · PostgreSQL · LightGBM</i> |
 
 These systems belong to the companies I build them for, so the repositories are private. I'm happy to walk through the architecture and code in an interview.
 

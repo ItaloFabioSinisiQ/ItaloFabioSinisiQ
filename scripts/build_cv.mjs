@@ -113,7 +113,7 @@ const CV = {
     location: 'Lima, Perú · GMT-5 · Disponible para remoto',
     summaryTitle: 'Perfil',
     summary:
-      'Desarrollador Full Stack y Analista de Datos con más de 5 años de experiencia en software y datos. Diseño, construyo y opero plataformas en producción para logística de última milla, fuerza de ventas e inteligencia de negocios, desde backends en Python y PostgreSQL hasta clientes en React y React Native, integraciones con ERP y CI/CD. Cada sistema parte de la métrica de negocio que debe mover y se mide en producción.',
+      'Desarrollador Full Stack y Analista de Datos con más de 5 años de experiencia en software y datos. Diseño, construyo y opero plataformas en producción para logística de última milla, fuerza de ventas e inteligencia de negocios, desde backends en Python y PostgreSQL hasta clientes en React y React Native, integraciones con ERP y CI/CD. Diseño cada sistema a partir de la métrica de negocio que debe mejorar y la mido en producción.',
     resultsTitle: 'Resultados destacados',
     results: [
       ['7% → 1%', 'rechazo de pedidos'],
@@ -129,10 +129,10 @@ const CV = {
         dates: 'Dic 2025 – Actualidad',
         bullets: [
           'Diseño, construyo, despliego y opero las plataformas internas del área de BI con Python, FastAPI, PostgreSQL, React y React Native.',
-          '<b>RutaLiquidador</b>, plataforma de reparto de última milla y liquidación de rutas: redujo la tasa de rechazo de pedidos <b>de 7% a 1%</b> y dio control GPS en tiempo real de la flota. 207 endpoints de API, más de 7,700 tests automatizados y 43 dispositivos en producción.',
+          '<b>RutaLiquidador</b>, plataforma de reparto de última milla y liquidación de rutas: redujo la tasa de rechazo de pedidos <b>de 7% a 1%</b> y dio control GPS de la flota en tiempo real. 207 endpoints de API, más de 7,700 tests automatizados y 43 dispositivos en producción.',
           'Motor de identificación de promociones con 14 tipos, <b>correcto en 2,000 de 2,000</b> casos de validación (método anterior: alrededor de 4% de error). Liquidación por tripulante con decimales exactos, app offline-first para choferes, señales de fraude y alertas por WhatsApp.',
           'Motor de concursos comerciales que recalcula 14 concursos cada día hábil, validado con <b>cero diferencias en 281,788 filas</b>; reportes automáticos por WhatsApp para 225 combinaciones de supervisor y categoría.',
-          'Introduje despliegues con Docker, CI/CD con GitHub Actions, mutation testing y releases automatizados con backup y rollback (unos 15 s de interrupción). Reduje una consulta crítica de 4.9 s a 7 ms.',
+          'Introduje despliegues con Docker, CI/CD con GitHub Actions, mutation testing y despliegues automatizados con backup y rollback (unos 15 s de interrupción). Reduje una consulta crítica de 4.9 s a 7 ms.',
         ],
       },
       {
