@@ -634,6 +634,22 @@ def theme_button(t, mode):
     return svg(size, frame_ + icon, title, width=size)
 
 
+def spanish_panel(t):
+    """Full-width bar used as the summary of the collapsible Spanish version."""
+    w, h = 840, 64
+    cx, cy = w - 40, h / 2
+    body = (
+        f'<rect x="0.75" y="0.75" width="{w - 1.5}" height="{h - 1.5}" rx="8" fill="{t["panel"]}" stroke="{t["accent"]}" stroke-width="1.5"/>'
+        f'<rect x="20" y="17" width="40" height="30" rx="15" fill="{t["accent"]}"/>'
+        f'<text x="40" y="37" font-size="13" font-weight="700" fill="{t["on_accent"]}" text-anchor="middle">ES</text>'
+        f'<text x="76" y="29" font-size="16" font-weight="600" fill="{t["text"]}">Versión en español</text>'
+        f'<text x="76" y="48" font-size="13" fill="{t["text2"]}">Haz clic para ver el perfil completo en español</text>'
+        f'<path d="M{cx - 7},{cy - 3} L{cx},{cy + 4} L{cx + 7},{cy - 3}" fill="none" stroke="{t["accent"]}" '
+        f'stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>'
+    )
+    return svg(h, body, "Versión en español", width=w)
+
+
 GRAPHICS = {
     "header": header,
     "impact": impact,
@@ -663,7 +679,8 @@ def main():
                     lang_button(theme, lang, active), encoding="utf-8")
                 count += 1
         (ASSETS / f"theme-{mode}.svg").write_text(theme_button(theme, mode), encoding="utf-8")
-        count += 1
+        (ASSETS / f"spanish-panel-{mode}.svg").write_text(spanish_panel(theme), encoding="utf-8")
+        count += 2
     print(f"wrote {count} files to {ASSETS}")
 
 
