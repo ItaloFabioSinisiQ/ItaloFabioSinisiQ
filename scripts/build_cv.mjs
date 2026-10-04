@@ -47,7 +47,7 @@ const CV = {
           'Design, build, deploy and operate the BI area\'s internal platforms on Python, FastAPI, PostgreSQL, React and React Native.',
           '<b>RutaLiquidador</b>, a last-mile delivery and route settlement platform: reduced the order rejection rate <b>from 7% to 1%</b> and added real-time GPS control of the truck fleet. 207 API endpoints, 7,700+ automated tests, 43 devices in production.',
           'Promotion identification engine covering 14 promotion types, <b>correct in 2,000 of 2,000</b> validation cases (previous method: about 4% errors). Settlement per crew member in exact decimals, offline-first driver app, fraud signals and WhatsApp alerts.',
-          'Sales contest engine that recalculates 14 contests every business day, validated with <b>zero discrepancies across 281,788 rows</b>; automated WhatsApp reporting for 225 supervisor and category combinations.',
+          'Automated WhatsApp reporting for 225 supervisor and category combinations, replacing a manual process.',
           'Introduced Docker deployments, GitHub Actions CI/CD, mutation testing and scripted releases with backup and rollback (about 15 s of downtime). Cut a critical query from 4.9 s to 7 ms.',
         ],
       },
@@ -83,7 +83,6 @@ const CV = {
     projects: [
       ['RutaLiquidador', 'Delivery, fleet tracking and route settlement platform', 'FastAPI · PostgreSQL · React · React Native · OSRM · Docker'],
       ['Ventory Multicanal', 'Field sales platform with GPS audit and offline sync', 'FastAPI · PostgreSQL · React Native · React'],
-      ['Portal de Concursos', 'Sales contest engine on read-only ERP queries', 'Next.js · FastAPI · SQL Server'],
       ['Capturas de Preventa', 'Scheduled WhatsApp report bot, about 350 tests', 'Python · FastAPI · Playwright · Node.js'],
     ],
     skillsTitle: 'Skills',
@@ -131,7 +130,7 @@ const CV = {
           'Diseño, construyo, despliego y opero las plataformas internas del área de BI con Python, FastAPI, PostgreSQL, React y React Native.',
           '<b>RutaLiquidador</b>, plataforma de reparto de última milla y liquidación de rutas: redujo la tasa de rechazo de pedidos <b>de 7% a 1%</b> y dio control GPS de la flota en tiempo real. 207 endpoints de API, más de 7,700 tests automatizados y 43 dispositivos en producción.',
           'Motor de identificación de promociones con 14 tipos, <b>correcto en 2,000 de 2,000</b> casos de validación (método anterior: alrededor de 4% de error). Liquidación por tripulante con decimales exactos, app offline-first para choferes, señales de fraude y alertas por WhatsApp.',
-          'Motor de concursos comerciales que recalcula 14 concursos cada día hábil, validado con <b>cero diferencias en 281,788 filas</b>; reportes automáticos por WhatsApp para 225 combinaciones de supervisor y categoría.',
+          'Reportes automáticos por WhatsApp para 225 combinaciones de supervisor y categoría, en reemplazo de un proceso manual.',
           'Introduje despliegues con Docker, CI/CD con GitHub Actions, mutation testing y despliegues automatizados con backup y rollback (unos 15 s de interrupción). Reduje una consulta crítica de 4.9 s a 7 ms.',
         ],
       },
@@ -167,7 +166,6 @@ const CV = {
     projects: [
       ['RutaLiquidador', 'Reparto, rastreo de flota y liquidación de rutas', 'FastAPI · PostgreSQL · React · React Native · OSRM · Docker'],
       ['Ventory Multicanal', 'Fuerza de ventas con auditoría GPS y sincronización offline', 'FastAPI · PostgreSQL · React Native · React'],
-      ['Portal de Concursos', 'Motor de concursos sobre consultas de solo lectura al ERP', 'Next.js · FastAPI · SQL Server'],
       ['Capturas de Preventa', 'Bot de reportes programados por WhatsApp, unos 350 tests', 'Python · FastAPI · Playwright · Node.js'],
     ],
     skillsTitle: 'Habilidades',
