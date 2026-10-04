@@ -1,3 +1,8 @@
+<p align="right">
+  <a href="https://github.com/ItaloFabioSinisiQ"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/lang-en-active-dark.svg"><img src="assets/lang-en-active-light.svg" height="30" alt="English (current)"></picture></a>
+  <a href="https://github.com/ItaloFabioSinisiQ/ItaloFabioSinisiQ/blob/main/README.es.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/lang-es-dark.svg"><img src="assets/lang-es-light.svg" height="30" alt="Leer en español"></picture></a>
+</p>
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
   <img src="assets/header-light.svg" width="100%" alt="Italo Fabio Sinisi Quintana. Full Stack Developer and Data Analyst building logistics, sales and BI platforms in production. 5+ years in software and data. Based in Lima, Peru (GMT-5), open to remote work. Currently Full Stack Developer at Auren.">
