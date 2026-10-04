@@ -7,6 +7,7 @@
 Lima, Peru · 5+ years building data-driven software · Open to remote (international) and local roles
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/italo-fabio-sinisi-quintana/)
+[![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=flat-square&logo=whatsapp&logoColor=white)](https://wa.me/51977170609)
 [![Email](https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:sinisiquintanaitalo@gmail.com)
 [![Portfolio](https://img.shields.io/badge/Portfolio-111111?style=flat-square&logo=githubpages&logoColor=white)](https://italofabiosinisiq.github.io/-dev-holaMundo-true-/)
 
@@ -109,6 +110,6 @@ An end-to-end logistics platform for a mass-consumer distributor, with three par
 
 **Have a challenging project in mind? Let's talk.**
 
-[LinkedIn](https://www.linkedin.com/in/italo-fabio-sinisi-quintana/) · [sinisiquintanaitalo@gmail.com](mailto:sinisiquintanaitalo@gmail.com)
+[LinkedIn](https://www.linkedin.com/in/italo-fabio-sinisi-quintana/) · [WhatsApp](https://wa.me/51977170609) · [sinisiquintanaitalo@gmail.com](mailto:sinisiquintanaitalo@gmail.com)
 
 </div>
