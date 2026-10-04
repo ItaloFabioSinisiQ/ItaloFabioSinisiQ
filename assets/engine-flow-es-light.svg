@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="262" viewBox="0 0 880 262" role="img" aria-label="Orden de decisión del motor de promociones" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+<title>Orden de decisión del motor de promociones</title>
+<style>.flow{stroke-dasharray:5 5;animation:flow 1.4s linear infinite}@keyframes flow{to{stroke-dashoffset:-20}}@media (prefers-reduced-motion:reduce){.flow{animation:none;stroke-dasharray:none}}</style><rect x="0.5" y="0.5" width="879" height="261" rx="6" fill="#f6f8fa" stroke="#d0d7de"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#0969da"/></marker></defs>
+<text x="24" y="34" font-size="12" font-weight="600" letter-spacing="0.8" fill="#59636e">MOTOR DE PROMOCIONES · ORDEN DE DECISIÓN</text>
+<rect x="24" y="52" width="150" height="64" rx="10" fill="#ffffff" stroke="#d0d7de"/><text x="38" y="80" font-size="14" font-weight="600" fill="#1f2328">Línea de regalo</text><text x="38" y="100" font-size="12" fill="#59636e">de la boleta del ERP</text>
+<path d="M177,84.0 H197" fill="none" stroke="#0969da" stroke-width="1.5" class="flow" marker-end="url(#arrow)"/>
+<rect x="200" y="52" width="106" height="64" rx="10" fill="#ffffff" stroke="#0969da"/><text x="214" y="80" font-size="14" font-weight="600" fill="#1f2328">Progresiva</text><text x="214" y="100" font-size="12" fill="#59636e">N + M</text>
+<path d="M309,84.0 H323" fill="none" stroke="#0969da" stroke-width="1.5" class="flow" marker-end="url(#arrow)"/>
+<path d="M253.0,119 V159" fill="none" stroke="#0969da" stroke-width="1.5" class="flow" marker-end="url(#arrow)"/>
+<rect x="326" y="52" width="106" height="64" rx="10" fill="#ffffff" stroke="#0969da"/><text x="340" y="80" font-size="14" font-weight="600" fill="#1f2328">Por rango</text><text x="340" y="100" font-size="12" fill="#59636e">por escalas</text>
+<path d="M435,84.0 H449" fill="none" stroke="#0969da" stroke-width="1.5" class="flow" marker-end="url(#arrow)"/>
+<path d="M379.0,119 V159" fill="none" stroke="#0969da" stroke-width="1.5" class="flow" marker-end="url(#arrow)"/>
+<rect x="452" y="52" width="106" height="64" rx="10" fill="#ffffff" stroke="#0969da"/><text x="466" y="80" font-size="14" font-weight="600" fill="#1f2328">Combo</text><text x="466" y="100" font-size="12" fill="#59636e">combo completo</text>
+<path d="M561,84.0 H575" fill="none" stroke="#0969da" stroke-width="1.5" class="flow" marker-end="url(#arrow)"/>
+<path d="M505.0,119 V159" fill="none" stroke="#0969da" stroke-width="1.5" class="flow" marker-end="url(#arrow)"/>
+<rect x="578" y="52" width="106" height="64" rx="10" fill="#ffffff" stroke="#0969da"/><text x="592" y="80" font-size="14" font-weight="600" fill="#1f2328">Descuento</text><text x="592" y="100" font-size="12" fill="#59636e">como regalo</text>
+<path d="M687,84.0 H711" fill="none" stroke="#0969da" stroke-width="1.5" class="flow" marker-end="url(#arrow)"/>
+<path d="M631.0,119 V159" fill="none" stroke="#0969da" stroke-width="1.5" class="flow" marker-end="url(#arrow)"/>
+<text x="699.0" y="76.0" font-size="12" fill="#59636e" text-anchor="middle">no</text>
+<text x="261.0" y="142" font-size="12" fill="#59636e">coincide</text>
+<rect x="714" y="52" width="142" height="64" rx="10" fill="#ffffff" stroke="#d0d7de"/><text x="728" y="80" font-size="14" font-weight="600" fill="#1f2328">Revisión manual</text><text x="728" y="100" font-size="12" fill="#59636e">nunca se adivina</text>
+<rect x="200" y="162" width="484" height="44" rx="10" fill="#0969da" fill-opacity="0.12" stroke="#0969da"/><text x="442.0" y="189" font-size="13" font-weight="600" fill="#1f2328" text-anchor="middle">Promoción identificada · regalo recalculado ante rechazo parcial</text><text x="24" y="242" font-size="13" fill="#59636e">Validado en 2,000 casos: 2,000 correctos (método anterior: alrededor de 4% de error)</text>
+</svg>

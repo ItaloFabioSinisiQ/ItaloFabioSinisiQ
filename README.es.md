@@ -23,6 +23,11 @@ Desarrollador Full Stack y Analista de Datos con más de 5 años de experiencia 
 **Roles:** Full Stack Engineer · Backend Engineer (Python, FastAPI) · Software Engineer · Data Engineer · BI Developer<br>
 **Disponibilidad:** remoto a tiempo completo o por contrato, proyectos freelance y roles presenciales en Lima · Zona horaria GMT-5 · Español nativo
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/approach-es-dark.svg">
+  <img src="assets/approach-es-light.svg" width="100%" alt="Cómo trabajo: métrica, diseño, desarrollo, pruebas, despliegue y medición, y de vuelta a la métrica.">
+</picture>
+
 ## Resultados destacados
 
 <picture>
@@ -31,6 +36,11 @@ Desarrollador Full Stack y Analista de Datos con más de 5 años de experiencia 
 </picture>
 
 ## Experiencia
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/journey-es-dark.svg">
+  <img src="assets/journey-es-light.svg" width="100%" alt="Trayectoria de los datos al software: Analista Financiero en Alfin Banco en 2022, Analista de Datos en UBYCALL en 2023 y 2024, Full Stack Developer en Auren desde 2025.">
+</picture>
 
 ### Full Stack Developer, Inteligencia de Negocios — Auren
 <sub>Distribución de consumo masivo · Lima, Perú · Diciembre 2025 – Actualidad</sub>
@@ -63,6 +73,13 @@ Cada mañana la empresa despacha camiones por Lima, cada uno con una tripulació
   <img src="assets/case-metrics-es-light.svg" width="100%" alt="RutaLiquidador en cifras: 207 endpoints de API REST, más de 7,700 tests automatizados, 47 tablas de base de datos y 43 dispositivos en producción.">
 </picture>
 
+### Cómo funciona
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/delivery-flow-es-dark.svg">
+  <img src="assets/delivery-flow-es-light.svg" width="100%" alt="Un día de ruta: 1. el ERP sincroniza pedidos, rutas y promociones a las 06:00; 2. cada tripulación recibe su ruta en la app; 3. cada parada se registra como entregada, parcial o rechazada con foto y GPS; 4. se recalculan promociones y montos; 5. se liquida el monto por tripulante y se envían los reportes de cierre. En vivo durante el día: mapa de la flota, alertas por montos sin cobrar sobre S/ 1,000 y rutas detenidas.">
+</picture>
+
 ### Problemas resueltos
 
 | Problema | Solución |
@@ -84,6 +101,13 @@ Cada mañana la empresa despacha camiones por Lima, cada uno con una tripulació
 | **Reportes manuales.** Supervisores y gerencia armaban los reportes a mano. | Reportes programados de inicio, mediodía y cierre por correo y WhatsApp, sin envíos duplicados, y un análisis que baja de periodo a chofer, cliente y producto. |
 
 </details>
+
+### Motor de promociones
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/engine-flow-es-dark.svg">
+  <img src="assets/engine-flow-es-light.svg" width="100%" alt="Orden de decisión del motor de promociones: cada línea de regalo de la boleta del ERP se evalúa como progresiva N+M, por rango, combo y descuento como regalo. Si coincide, se identifica la promoción y se recalcula el regalo ante un rechazo parcial; si no coincide, pasa a revisión manual y nunca se adivina. Validado en 2,000 casos, todos correctos.">
+</picture>
 
 ### Arquitectura
 

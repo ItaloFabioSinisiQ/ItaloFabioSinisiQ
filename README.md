@@ -23,6 +23,11 @@ Full Stack Developer and Data Analyst with 5+ years of experience in software an
 **Roles:** Full Stack Engineer · Backend Engineer (Python, FastAPI) · Software Engineer · Data Engineer · BI Developer<br>
 **Availability:** remote full-time or contract, freelance projects, and on-site roles in Lima · Time zone GMT-5 · Spanish (native)
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/approach-dark.svg">
+  <img src="assets/approach-light.svg" width="100%" alt="How I work: metric, design, build, test, ship and measure, then back to the metric.">
+</picture>
+
 ## Selected results
 
 <picture>
@@ -31,6 +36,11 @@ Full Stack Developer and Data Analyst with 5+ years of experience in software an
 </picture>
 
 ## Experience
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/journey-dark.svg">
+  <img src="assets/journey-light.svg" width="100%" alt="Career path from data to software: Financial Analyst at Alfin Banco in 2022, Data Analyst at UBYCALL in 2023 and 2024, Full Stack Developer at Auren since 2025.">
+</picture>
 
 ### Full Stack Developer, Business Intelligence — Auren
 <sub>FMCG distribution · Lima, Peru · December 2025 – Present</sub>
@@ -63,6 +73,13 @@ Each morning the company dispatches trucks across Lima, each with a crew of thre
   <img src="assets/case-metrics-light.svg" width="100%" alt="RutaLiquidador at a glance: 207 REST API endpoints, more than 7,700 automated tests, 47 database tables and 43 devices in production.">
 </picture>
 
+### How it works
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/delivery-flow-dark.svg">
+  <img src="assets/delivery-flow-light.svg" width="100%" alt="A day on the route: 1. the ERP sync loads orders, routes and promotions at 06:00; 2. each crew receives its route on the driver app; 3. every stop is recorded as delivered, partial or rejected with photo and GPS; 4. promotions and amounts are recalculated; 5. money owed per crew member is settled and closing reports are sent. Live during the day: fleet map, alerts for uncollected amounts over PEN 1,000 and stalled-route detection.">
+</picture>
+
 ### Problems solved
 
 | Problem | Solution |
@@ -84,6 +101,13 @@ Each morning the company dispatches trucks across Lima, each with a crew of thre
 | **Manual reporting.** Supervisors and management assembled reports by hand. | Scheduled start, midday and closing reports by email and WhatsApp, with no duplicate sends, and a drill-down from period to driver, customer and product. |
 
 </details>
+
+### Promotion engine
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/engine-flow-dark.svg">
+  <img src="assets/engine-flow-light.svg" width="100%" alt="Promotion engine decision order: each free-goods line from the ERP invoice is checked as progressive N+M, tiered by range, combo and discount as free goods. A match identifies the promotion and recalculates the bonus on partial rejection; no match goes to manual review and is never guessed. Validated on 2,000 cases, all correct.">
+</picture>
 
 ### Architecture
 
