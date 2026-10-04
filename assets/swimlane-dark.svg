@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="546" viewBox="0 0 880 546" role="img" aria-label="RutaLiquidador end-to-end flow by actor" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+<title>RutaLiquidador end-to-end flow by actor</title>
+<style>.flow{stroke-dasharray:5 5;animation:flow 1.4s linear infinite}@keyframes flow{to{stroke-dashoffset:-20}}@media (prefers-reduced-motion:reduce){.flow{animation:none;stroke-dasharray:none}}</style><rect x="0.5" y="0.5" width="879" height="545" rx="6" fill="#151b23" stroke="#3d444d"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#4493f8"/></marker></defs>
+<text x="24" y="34" font-size="12" font-weight="600" letter-spacing="0.8" fill="#9198a1">END-TO-END FLOW · WHO DOES WHAT</text>
+<text x="211.6" y="58" font-size="12" font-weight="600" fill="#9198a1" text-anchor="middle">1 · Morning sync</text>
+<text x="354.8" y="58" font-size="12" font-weight="600" fill="#9198a1" text-anchor="middle">2 · On the route</text>
+<text x="498.0" y="58" font-size="12" font-weight="600" fill="#9198a1" text-anchor="middle">3 · At the stop</text>
+<text x="641.2" y="58" font-size="12" font-weight="600" fill="#9198a1" text-anchor="middle">4 · Validation</text>
+<text x="784.4" y="58" font-size="12" font-weight="600" fill="#9198a1" text-anchor="middle">5 · Close</text>
+<rect x="12" y="74" width="856" height="84" rx="4" fill="#0d1117" fill-opacity="0.7"/>
+<text x="24" y="114.0" font-size="13" font-weight="600" fill="#f0f6fc">ERP</text><text x="24" y="132.0" font-size="12" fill="#9198a1">SQL Server</text>
+<text x="24" y="198.0" font-size="13" font-weight="600" fill="#f0f6fc">Backend</text><text x="24" y="216.0" font-size="12" fill="#9198a1">FastAPI</text>
+<rect x="12" y="242" width="856" height="84" rx="4" fill="#0d1117" fill-opacity="0.7"/>
+<text x="24" y="282.0" font-size="13" font-weight="600" fill="#f0f6fc">Driver app</text><text x="24" y="300.0" font-size="12" fill="#9198a1">React Native</text>
+<text x="24" y="366.0" font-size="13" font-weight="600" fill="#f0f6fc">Control tower</text><text x="24" y="384.0" font-size="12" fill="#9198a1">React</text>
+<rect x="12" y="410" width="856" height="84" rx="4" fill="#0d1117" fill-opacity="0.7"/>
+<text x="24" y="450.0" font-size="13" font-weight="600" fill="#f0f6fc">Alerts</text><text x="24" y="468.0" font-size="12" fill="#9198a1">WhatsApp, email</text>
+<line x1="134" y1="74" x2="134" y2="494" stroke="#3d444d"/>
+<rect x="147.0" y="86.0" width="129.2" height="60" rx="6" fill="#0d1117" stroke="#3d444d" stroke-width="1"/>
+<text x="157.0" y="112.5" font-size="12" font-weight="600" fill="#f0f6fc">Orders, invoices</text>
+<text x="157.0" y="127.5" font-size="12" fill="#9198a1">and promotions</text>
+<rect x="147.0" y="170.0" width="129.2" height="60" rx="6" fill="#0d1117" stroke="#3d444d" stroke-width="1"/>
+<text x="157.0" y="196.5" font-size="12" font-weight="600" fill="#f0f6fc">06:00 sync, hourly</text>
+<text x="157.0" y="211.5" font-size="12" fill="#9198a1">retry until noon</text>
+<rect x="147.0" y="254.0" width="129.2" height="60" rx="6" fill="#0d1117" stroke="#3d444d" stroke-width="1"/>
+<text x="157.0" y="280.5" font-size="12" font-weight="600" fill="#f0f6fc">Route and crew</text>
+<text x="157.0" y="295.5" font-size="12" fill="#9198a1">on each phone</text>
+<rect x="290.2" y="254.0" width="129.2" height="60" rx="6" fill="#0d1117" stroke="#3d444d" stroke-width="1"/>
+<text x="300.2" y="280.5" font-size="12" font-weight="600" fill="#f0f6fc">Offline maps,</text>
+<text x="300.2" y="295.5" font-size="12" fill="#9198a1">encrypted queue</text>
+<rect x="290.2" y="338.0" width="129.2" height="60" rx="6" fill="#0d1117" stroke="#3d444d" stroke-width="1"/>
+<text x="300.2" y="364.5" font-size="12" font-weight="600" fill="#f0f6fc">Live fleet map,</text>
+<text x="300.2" y="379.5" font-size="12" fill="#9198a1">route status</text>
+<rect x="433.4" y="254.0" width="129.2" height="60" rx="6" fill="#0d1117" stroke="#4493f8" stroke-width="1.5"/>
+<text x="443.4" y="273.0" font-size="12" font-weight="600" fill="#f0f6fc">Delivered, partial</text>
+<text x="443.4" y="288.0" font-size="12" fill="#9198a1">or rejected</text>
+<text x="443.4" y="303.0" font-size="12" fill="#9198a1">photo · GPS · lines</text>
+<rect x="576.6" y="170.0" width="129.2" height="60" rx="6" fill="#0d1117" stroke="#3d444d" stroke-width="1"/>
+<text x="586.6" y="196.5" font-size="12" font-weight="600" fill="#f0f6fc">Promotion engine,</text>
+<text x="586.6" y="211.5" font-size="12" fill="#9198a1">conflict check</text>
+<rect x="576.6" y="338.0" width="129.2" height="60" rx="6" fill="#0d1117" stroke="#3d444d" stroke-width="1"/>
+<text x="586.6" y="364.5" font-size="12" font-weight="600" fill="#f0f6fc">Fraud signals,</text>
+<text x="586.6" y="379.5" font-size="12" fill="#9198a1">rejection follow-up</text>
+<rect x="576.6" y="422.0" width="129.2" height="60" rx="6" fill="#0d1117" stroke="#3d444d" stroke-width="1"/>
+<text x="586.6" y="448.5" font-size="12" font-weight="600" fill="#f0f6fc">Over PEN 1,000</text>
+<text x="586.6" y="463.5" font-size="12" fill="#9198a1">left uncollected</text>
+<rect x="719.8" y="170.0" width="129.2" height="60" rx="6" fill="#0d1117" stroke="#3d444d" stroke-width="1"/>
+<text x="729.8" y="196.5" font-size="12" font-weight="600" fill="#f0f6fc">Settlement per</text>
+<text x="729.8" y="211.5" font-size="12" fill="#9198a1">crew member</text>
+<rect x="719.8" y="338.0" width="129.2" height="60" rx="6" fill="#0d1117" stroke="#3d444d" stroke-width="1"/>
+<text x="729.8" y="364.5" font-size="12" font-weight="600" fill="#f0f6fc">Office corrections,</text>
+<text x="729.8" y="379.5" font-size="12" fill="#9198a1">audit trail</text>
+<rect x="719.8" y="422.0" width="129.2" height="60" rx="6" fill="#0d1117" stroke="#3d444d" stroke-width="1"/>
+<text x="729.8" y="448.5" font-size="12" font-weight="600" fill="#f0f6fc">Closing reports by</text>
+<text x="729.8" y="463.5" font-size="12" fill="#9198a1">email and WhatsApp</text>
+<path d="M211.6,149.0 V167.0" fill="none" stroke="#4493f8" stroke-width="1.5" class="flow" marker-end="url(#arrow)"/>
+<path d="M211.6,233.0 V251.0" fill="none" stroke="#4493f8" stroke-width="1.5" class="flow" marker-end="url(#arrow)"/>
+<path d="M354.8,317.0 V335.0" fill="none" stroke="#4493f8" stroke-width="1.5" class="flow" marker-end="url(#arrow)"/>
+<path d="M641.2,233.0 V335.0" fill="none" stroke="#4493f8" stroke-width="1.5" class="flow" marker-end="url(#arrow)"/>
+<path d="M641.2,401.0 V419.0" fill="none" stroke="#4493f8" stroke-width="1.5" class="flow" marker-end="url(#arrow)"/>
+<path d="M784.4,233.0 V335.0" fill="none" stroke="#4493f8" stroke-width="1.5" class="flow" marker-end="url(#arrow)"/>
+<path d="M784.4,401.0 V419.0" fill="none" stroke="#4493f8" stroke-width="1.5" class="flow" marker-end="url(#arrow)"/>
+<path d="M279.2,284.0 H287.2" fill="none" stroke="#4493f8" stroke-width="1.5" class="flow" marker-end="url(#arrow)"/>
+<path d="M422.4,284.0 H430.4" fill="none" stroke="#4493f8" stroke-width="1.5" class="flow" marker-end="url(#arrow)"/>
+<path d="M708.8,200.0 H716.8" fill="none" stroke="#4493f8" stroke-width="1.5" class="flow" marker-end="url(#arrow)"/>
+<path d="M498.0,251.0 C498.0,200.0 498.0,200.0 573.6,200.0" fill="none" stroke="#4493f8" stroke-width="1.5" class="flow" marker-end="url(#arrow)"/>
+<text x="360.8" y="330.0" font-size="12" fill="#9198a1">GPS</text>
+<text x="564.6" y="188.0" font-size="12" fill="#4493f8" text-anchor="end">syncs when signal returns</text>
+<text x="24" y="526" font-size="13" fill="#9198a1">Signal covers about 64% of the shift, so every field step works offline and syncs later.</text>
+</svg>

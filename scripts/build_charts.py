@@ -82,10 +82,32 @@ COPY = {
         ),
         "approach": ["Metric", "Design", "Build", "Test", "Ship", "Measure"],
         "journey": ("FROM DATA TO SOFTWARE", [
-            ("2022", "Financial Analyst", "Alfin Banco · credit risk ML, ETL"),
-            ("2023 – 2024", "Data Analyst", "UBYCALL · predictive analytics, BI"),
-            ("2025 – PRESENT", "Full Stack Developer", "Auren · logistics and BI platforms"),
+            ("2021 – 2022", "Admin Assistant", "Real estate · SQL, Power BI"),
+            ("2022", "Financial Analyst", "Alfin Banco · credit risk"),
+            ("2023 – 2024", "Data Analyst", "UBYCALL · analytics, BI"),
+            ("2025 – PRESENT", "Full Stack Dev", "Auren · logistics, BI"),
         ]),
+        "cv": ("Download CV", "PDF"),
+        "lanes": ("END-TO-END FLOW · WHO DOES WHAT",
+                  ["1 · Morning sync", "2 · On the route", "3 · At the stop", "4 · Validation", "5 · Close"],
+                  ["ERP", "Backend", "Driver app", "Control tower", "Alerts"],
+                  ["SQL Server", "FastAPI", "React Native", "React", "WhatsApp, email"],
+                  {
+                      (0, 0): ["Orders, invoices", "and promotions"],
+                      (1, 0): ["06:00 sync, hourly", "retry until noon"],
+                      (2, 0): ["Route and crew", "on each phone"],
+                      (2, 1): ["Offline maps,", "encrypted queue"],
+                      (3, 1): ["Live fleet map,", "route status"],
+                      (2, 2): ["Delivered, partial", "or rejected", "photo · GPS · lines"],
+                      (1, 3): ["Promotion engine,", "conflict check"],
+                      (3, 3): ["Fraud signals,", "rejection follow-up"],
+                      (4, 3): ["Over PEN 1,000", "left uncollected"],
+                      (1, 4): ["Settlement per", "crew member"],
+                      (3, 4): ["Office corrections,", "audit trail"],
+                      (4, 4): ["Closing reports by", "email and WhatsApp"],
+                  },
+                  "syncs when signal returns", "GPS",
+                  "Signal covers about 64% of the shift, so every field step works offline and syncs later."),
         "flow": ("A DAY ON THE ROUTE", [
             ("ERP sync", ["Orders, routes and", "promotions load", "at 06:00"]),
             ("Dispatch", ["Each crew gets", "its route on the", "driver app"]),
@@ -102,7 +124,8 @@ COPY = {
                    "Validated on 2,000 cases: 2,000 correct (previous method: about 4% errors)"),
         "a11y": ("Italo Fabio Sinisi Quintana, Full Stack Developer and Data Analyst",
                  "Selected results", "RutaLiquidador at a glance", "RutaLiquidador system architecture",
-                 "How I work", "Career path", "A day on the route", "Promotion engine decision order"),
+                 "How I work", "Career path", "A day on the route", "Promotion engine decision order",
+                 "RutaLiquidador end-to-end flow by actor"),
     },
     "es": {
         "title": "Desarrollador Full Stack y Analista de Datos",
@@ -146,14 +169,36 @@ COPY = {
         "delivery": (
             "DESPLIEGUE",
             "Docker Compose · Nginx · 6 workflows de GitHub Actions · imágenes en GHCR",
-            "Releases automatizados con backup, smoke test y rollback automático",
+            "Despliegues automatizados con backup, smoke test y rollback",
         ),
         "approach": ["Métrica", "Diseño", "Desarrollo", "Pruebas", "Despliegue", "Medición"],
         "journey": ("DE LOS DATOS AL SOFTWARE", [
-            ("2022", "Analista Financiero", "Alfin Banco · ML de riesgo, ETL"),
-            ("2023 – 2024", "Analista de Datos", "UBYCALL · analítica predictiva, BI"),
-            ("2025 – HOY", "Full Stack Developer", "Auren · plataformas de logística y BI"),
+            ("2021 – 2022", "Asistente Adm.", "Inmobiliaria · SQL, Power BI"),
+            ("2022", "Analista Financiero", "Alfin Banco · riesgo"),
+            ("2023 – 2024", "Analista de Datos", "UBYCALL · analítica, BI"),
+            ("2025 – HOY", "Full Stack Dev", "Auren · logística, BI"),
         ]),
+        "cv": ("Descargar CV", "PDF"),
+        "lanes": ("FLUJO DE PUNTA A PUNTA · QUIÉN HACE QUÉ",
+                  ["1 · Sync matutino", "2 · En ruta", "3 · En la parada", "4 · Validación", "5 · Cierre"],
+                  ["ERP", "Backend", "App del chofer", "Torre de control", "Alertas"],
+                  ["SQL Server", "FastAPI", "React Native", "React", "WhatsApp, correo"],
+                  {
+                      (0, 0): ["Pedidos, boletas", "y promociones"],
+                      (1, 0): ["Sync a las 06:00 y", "reintentos por hora"],
+                      (2, 0): ["Ruta y tripulación", "en cada celular"],
+                      (2, 1): ["Mapas offline,", "cola cifrada"],
+                      (3, 1): ["Flota en vivo,", "estado de rutas"],
+                      (2, 2): ["Entregado, parcial", "o rechazado", "foto · GPS · líneas"],
+                      (1, 3): ["Motor de promos,", "control de choques"],
+                      (3, 3): ["Señales de fraude,", "seguimiento"],
+                      (4, 3): ["Más de S/ 1,000", "sin cobrar"],
+                      (1, 4): ["Liquidación por", "tripulante"],
+                      (3, 4): ["Correcciones de", "oficina, auditoría"],
+                      (4, 4): ["Reportes de cierre", "correo y WhatsApp"],
+                  },
+                  "sincroniza al volver la señal", "GPS",
+                  "La señal cubre cerca del 64% del turno: cada paso en campo funciona offline y sincroniza después."),
         "flow": ("UN DÍA DE RUTA", [
             ("Sync del ERP", ["Pedidos, rutas y", "promociones a", "las 06:00"]),
             ("Despacho", ["Cada tripulación", "recibe su ruta", "en la app"]),
@@ -170,7 +215,8 @@ COPY = {
                    "Validado en 2,000 casos: 2,000 correctos (método anterior: alrededor de 4% de error)"),
         "a11y": ("Italo Fabio Sinisi Quintana, Desarrollador Full Stack y Analista de Datos",
                  "Resultados destacados", "RutaLiquidador en cifras", "Arquitectura de RutaLiquidador",
-                 "Cómo trabajo", "Trayectoria", "Un día de ruta", "Orden de decisión del motor de promociones"),
+                 "Cómo trabajo", "Trayectoria", "Un día de ruta", "Orden de decisión del motor de promociones",
+                 "Flujo de punta a punta de RutaLiquidador por actor"),
     },
 }
 
@@ -370,7 +416,8 @@ def approach(t, c):
 
 def journey(t, c):
     caption, stages = c["journey"]
-    h, node_w, gap, top, node_h = 150, 256, 32, 46, 88
+    h, gap, top, node_h = 150, 24, 46, 88
+    node_w = (W - 48 - gap * (len(stages) - 1)) / len(stages)
     parts = [arrow_marker(t), caps(24, 26, caption, t)]
     for i, (period, role, place) in enumerate(stages):
         x = 24 + i * (node_w + gap)
@@ -378,9 +425,9 @@ def journey(t, c):
         parts.append(
             f'<rect x="{x}" y="{top}" width="{node_w}" height="{node_h}" rx="6" fill="{t["panel"]}" '
             f'stroke="{t["accent"] if current else t["border"]}" stroke-width="{1.5 if current else 1}"/>'
-            + caps(x + 18, top + 26, period, t)
-            + f'<text x="{x + 18}" y="{top + 52}" font-size="16" font-weight="600" fill="{t["text"]}">{role}</text>'
-            f'<text x="{x + 18}" y="{top + 74}" font-size="13" fill="{t["text2"]}">{place}</text>'
+            + caps(x + 16, top + 26, period, t)
+            + f'<text x="{x + 16}" y="{top + 52}" font-size="15" font-weight="600" fill="{t["text"]}">{role}</text>'
+            f'<text x="{x + 16}" y="{top + 74}" font-size="13" fill="{t["text2"]}">{place}</text>'
         )
         if not current:
             mid = top + node_h / 2
@@ -470,6 +517,123 @@ def lang_button(t, lang, active):
     return svg(h, body, label, width=w)
 
 
+def swimlane(t, c):
+    """Detailed flow: one lane per actor, one column per stage of the day."""
+    caption, stages, lanes, techs, nodes, sync_label, gps_label, footnote = c["lanes"]
+    label_w, grid_x = 112, 140
+    col_w = (W - 24 - grid_x) / len(stages)
+    node_w, node_h = col_w - 14, 60
+    head_y, lane_y, lane_h = 58, 74, 84
+    h = lane_y + lane_h * len(lanes) + 52
+
+    def box(lane, col):
+        x = grid_x + col * col_w + 7
+        y = lane_y + lane * lane_h + (lane_h - node_h) / 2
+        return x, y
+
+    parts = [frame(t, W, h), arrow_marker(t), caps(24, 34, caption, t)]
+    for col, name in enumerate(stages):
+        cx = grid_x + col * col_w + col_w / 2
+        parts.append(f'<text x="{cx:.1f}" y="{head_y}" font-size="12" font-weight="600" fill="{t["text2"]}" text-anchor="middle">{name}</text>')
+    for i, (lane, tech) in enumerate(zip(lanes, techs)):
+        y = lane_y + i * lane_h
+        if i % 2 == 0:
+            parts.append(f'<rect x="12" y="{y}" width="{W - 24}" height="{lane_h}" rx="4" fill="{t["card"]}" fill-opacity="0.7"/>')
+        parts.append(
+            f'<text x="24" y="{y + lane_h / 2 - 2}" font-size="13" font-weight="600" fill="{t["text"]}">{lane}</text>'
+            f'<text x="24" y="{y + lane_h / 2 + 16}" font-size="12" fill="{t["text2"]}">{tech}</text>'
+        )
+    parts.append(f'<line x1="{grid_x - 6}" y1="{lane_y}" x2="{grid_x - 6}" y2="{lane_y + lane_h * len(lanes)}" stroke="{t["border"]}"/>')
+
+    def right(k):
+        x, y = box(*k)
+        return x + node_w, y + node_h / 2
+
+    def left(k):
+        x, y = box(*k)
+        return x, y + node_h / 2
+
+    def top(k):
+        x, y = box(*k)
+        return x + node_w / 2, y
+
+    def bottom(k):
+        x, y = box(*k)
+        return x + node_w / 2, y + node_h
+
+    links = []
+    for a, b in [((0, 0), (1, 0)), ((1, 0), (2, 0)), ((2, 1), (3, 1)), ((1, 3), (3, 3)), ((3, 3), (4, 3)),
+                 ((1, 4), (3, 4)), ((3, 4), (4, 4))]:
+        (x1, y1), (x2, y2) = bottom(a), top(b)
+        links.append(connector(t, f"M{x1:.1f},{y1 + 3:.1f} V{y2 - 3:.1f}"))
+    for a, b in [((2, 0), (2, 1)), ((2, 1), (2, 2)), ((1, 3), (1, 4))]:
+        (x1, y1), (x2, y2) = right(a), left(b)
+        links.append(connector(t, f"M{x1 + 3:.1f},{y1:.1f} H{x2 - 3:.1f}"))
+    (x1, y1), (x2, y2) = top((2, 2)), left((1, 3))
+    links.append(connector(t, f"M{x1:.1f},{y1 - 3:.1f} C{x1:.1f},{y2:.1f} {x1:.1f},{y2:.1f} {x2 - 3:.1f},{y2:.1f}"))
+    gx, gy = bottom((2, 1))
+
+    for (lane, col), lines in nodes.items():
+        x, y = box(lane, col)
+        hero = (lane, col) == (2, 2)
+        parts.append(
+            f'<rect x="{x:.1f}" y="{y:.1f}" width="{node_w:.1f}" height="{node_h}" rx="6" '
+            f'fill="{t["card"]}" stroke="{t["accent"] if hero else t["border"]}" stroke-width="{1.5 if hero else 1}"/>'
+        )
+        first = y + (node_h - 15 * (len(lines) - 1)) / 2 + 4
+        for j, line in enumerate(lines):
+            weight = ' font-weight="600"' if j == 0 else ""
+            color = t["text"] if j == 0 else t["text2"]
+            parts.append(f'<text x="{x + 10:.1f}" y="{first + j * 15:.1f}" font-size="12"{weight} fill="{color}">{line}</text>')
+    parts.extend(links)
+    parts.append(f'<text x="{gx + 6:.1f}" y="{gy + 16:.1f}" font-size="12" fill="{t["text2"]}">{gps_label}</text>')
+    sx, sy = left((1, 3))
+    parts.append(f'<text x="{sx - 12:.1f}" y="{sy - 12:.1f}" font-size="12" fill="{t["accent"]}" text-anchor="end">{sync_label}</text>')
+    parts.append(f'<text x="24" y="{h - 20}" font-size="13" fill="{t["text2"]}">{footnote}</text>')
+    return svg(h, "\n".join(parts), c["a11y"][8])
+
+
+def cv_button(t, c):
+    """Compact outlined pill with a download icon, sized to sit in the top bar."""
+    label, _ = c["cv"]
+    h = 30
+    w = 46 + round(len(label) * 7.6)
+    ix, iy = 17, h / 2
+    icon = (
+        f'<path d="M{ix},{iy - 6} V{iy + 2} M{ix - 3.5},{iy - 1.5} L{ix},{iy + 2} L{ix + 3.5},{iy - 1.5} '
+        f'M{ix - 5.5},{iy + 6} H{ix + 5.5}" fill="none" stroke="{t["accent"]}" stroke-width="1.7" '
+        f'stroke-linecap="round" stroke-linejoin="round"/>'
+    )
+    body = (
+        f'<rect x="0.75" y="0.75" width="{w - 1.5}" height="{h - 1.5}" rx="{h / 2}" fill="none" '
+        f'stroke="{t["accent"]}" stroke-width="1.5"/>{icon}'
+        f'<text x="31" y="20" font-size="13" font-weight="600" fill="{t["accent"]}">{label}</text>'
+    )
+    return svg(h, body, label, width=w)
+
+
+def theme_button(t, mode):
+    """Round button showing the current theme: a sun in light mode, a moon in dark mode."""
+    size, c = 30, 15
+    frame_ = f'<circle cx="{c}" cy="{c}" r="{c - 0.75}" fill="none" stroke="{t["border"]}" stroke-width="1.5"/>'
+    if mode == "light":
+        rays = "".join(
+            f'<line x1="{c}" y1="{c - 9}" x2="{c}" y2="{c - 7}" transform="rotate({a} {c} {c})"/>'
+            for a in range(0, 360, 45)
+        )
+        icon = (
+            f'<circle cx="{c}" cy="{c}" r="4" fill="none" stroke="{t["text"]}" stroke-width="1.6"/>'
+            f'<g stroke="{t["text"]}" stroke-width="1.6" stroke-linecap="round">{rays}</g>'
+        )
+    else:
+        icon = (
+            f'<path d="M{c + 2.5},{c - 7.5} A7.5,7.5 0 1 0 {c + 7.5},{c + 2.5} A6,6 0 0 1 {c + 2.5},{c - 7.5} Z" '
+            f'fill="none" stroke="{t["text"]}" stroke-width="1.6" stroke-linejoin="round"/>'
+        )
+    title = "Light theme" if mode == "light" else "Dark theme"
+    return svg(size, frame_ + icon, title, width=size)
+
+
 GRAPHICS = {
     "header": header,
     "impact": impact,
@@ -479,6 +643,8 @@ GRAPHICS = {
     "journey": journey,
     "delivery-flow": delivery_flow,
     "engine-flow": engine_flow,
+    "cv-button": cv_button,
+    "swimlane": swimlane,
 }
 
 
@@ -496,6 +662,8 @@ def main():
                 (ASSETS / f"lang-{lang}{state}-{mode}.svg").write_text(
                     lang_button(theme, lang, active), encoding="utf-8")
                 count += 1
+        (ASSETS / f"theme-{mode}.svg").write_text(theme_button(theme, mode), encoding="utf-8")
+        count += 1
     print(f"wrote {count} files to {ASSETS}")
 
 
