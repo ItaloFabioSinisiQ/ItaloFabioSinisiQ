@@ -4,8 +4,8 @@ Every graphic is written per language and per GitHub theme:
     assets/<name>-light.svg, assets/<name>-dark.svg        (English)
     assets/<name>-es-light.svg, assets/<name>-es-dark.svg  (Spanish)
 
-The language toggles are written as:
-    assets/lang-<en|es>-<light|dark>.svg
+The top bar buttons are written as:
+    assets/lang-<en|es>[-active]-<light|dark>.svg and assets/theme-<light|dark>.svg
 
 Graphics are drawn at 880 px, the width of the README column on a GitHub
 profile, so SVG font sizes match rendered pixels (minimum 12 px).
@@ -612,6 +612,28 @@ def cv_button(t, c):
     return svg(h, body, label, width=w)
 
 
+def theme_button(t, mode):
+    """Round button showing the current theme: a sun in light mode, a moon in dark mode."""
+    size, c = 30, 15
+    frame_ = f'<circle cx="{c}" cy="{c}" r="{c - 0.75}" fill="none" stroke="{t["border"]}" stroke-width="1.5"/>'
+    if mode == "light":
+        rays = "".join(
+            f'<line x1="{c}" y1="{c - 9}" x2="{c}" y2="{c - 7}" transform="rotate({a} {c} {c})"/>'
+            for a in range(0, 360, 45)
+        )
+        icon = (
+            f'<circle cx="{c}" cy="{c}" r="4" fill="none" stroke="{t["text"]}" stroke-width="1.6"/>'
+            f'<g stroke="{t["text"]}" stroke-width="1.6" stroke-linecap="round">{rays}</g>'
+        )
+    else:
+        icon = (
+            f'<path d="M{c + 2.5},{c - 7.5} A7.5,7.5 0 1 0 {c + 7.5},{c + 2.5} A6,6 0 0 1 {c + 2.5},{c - 7.5} Z" '
+            f'fill="none" stroke="{t["text"]}" stroke-width="1.6" stroke-linejoin="round"/>'
+        )
+    title = "Light theme" if mode == "light" else "Dark theme"
+    return svg(size, frame_ + icon, title, width=size)
+
+
 GRAPHICS = {
     "header": header,
     "impact": impact,
@@ -635,8 +657,13 @@ def main():
             for name, build in GRAPHICS.items():
                 (ASSETS / f"{name}{suffix}-{mode}.svg").write_text(build(theme, copy), encoding="utf-8")
                 count += 1
-            (ASSETS / f"lang-{lang}-{mode}.svg").write_text(lang_button(theme, lang, False), encoding="utf-8")
-            count += 1
+            for active in (False, True):
+                state = "-active" if active else ""
+                (ASSETS / f"lang-{lang}{state}-{mode}.svg").write_text(
+                    lang_button(theme, lang, active), encoding="utf-8")
+                count += 1
+        (ASSETS / f"theme-{mode}.svg").write_text(theme_button(theme, mode), encoding="utf-8")
+        count += 1
     print(f"wrote {count} files to {ASSETS}")
 
 
