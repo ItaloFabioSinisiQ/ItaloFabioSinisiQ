@@ -1,265 +1,114 @@
-# 🚀 Italo Fabio Sinisi Quintana / https://italofabiosinisiq.github.io/-dev-holaMundo-true-/
-
 <div align="center">
-  
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=00D9FF&center=true&vCenter=true&width=435&lines=Data+Analyst+%7C+3%2B+Years+Experience;Cloud+Computing+Enthusiast;Machine+Learning+Developer;Transforming+Data+into+Insights)](https://git.io/typing-svg)
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/italo-fabio-sinisi-quintana/)
-[![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/51977170609)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sinisiquintanaitalo@gmail.com)
+# Italo Fabio Sinisi Quintana
 
-**Data Analyst | Cloud Computing | Machine Learning Enthusiast**
+**Full Stack Developer · Python · PostgreSQL · Docker · CI/CD · Rust**
 
-<img src="https://komarev.com/ghpvc/?username=ItaloFabioSinisiQ&color=brightgreen" alt="Profile Views" />
+Lima, Peru · 5+ years building data-driven software · Open to remote (international) and local roles
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/italo-fabio-sinisi-quintana/)
+[![Email](https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:sinisiquintanaitalo@gmail.com)
+[![Portfolio](https://img.shields.io/badge/Portfolio-111111?style=flat-square&logo=githubpages&logoColor=white)](https://italofabiosinisiq.github.io/-dev-holaMundo-true-/)
 
 </div>
 
 ---
 
-## 🎯 Sobre Mí
+## About me
 
-**Data Analyst especializado** con más de **3 años de experiencia** transformando datos complejos en insights accionables que impulsan el crecimiento empresarial. Mi enfoque combina análisis técnico profundo con visión estratégica de negocio.
+I'm a **Full Stack Developer** who builds production systems end to end: backend APIs, web dashboards, offline-first mobile apps, databases, and the CI/CD and Docker infrastructure that ships them. I currently lead development for the **Business Intelligence** area at **Auren**, a mass-consumer goods distributor in Peru. My work there covers logistics, last-mile delivery, field sales and executive analytics.
 
-```python
-class ItaloSinisi:
-    def __init__(self):
-        self.role = "Senior Data Analyst"
-        self.experience = "3+ años"
-        self.location = "Lima, Perú 🇵🇪"
-        self.passion = ["Data Science", "Cloud Architecture", "AI/ML"]
-        self.mission = "Democratizar el poder de los datos"
-        self.current_focus = "Machine Learning & Cloud Engineering"
-    
-    def get_expertise(self):
-        return {
-            "data_analysis": ["Statistical Analysis", "Predictive Modeling", "A/B Testing"],
-            "cloud_platforms": ["AWS", "GCP", "Azure", "Databricks"],
-            "programming": ["Python", "SQL", "JavaScript", "R"],
-            "visualization": ["Power BI", "Tableau", "Plotly", "D3.js"],
-            "big_data": ["Apache Spark", "ETL Pipelines", "Data Warehousing"],
-            "methodologies": ["Agile/SCRUM", "DataOps", "MLOps"]
-        }
-    
-    def career_highlights(self):
-        return [
-            "🚀 15% increase in conversion rates through advanced analytics",
-            "⚡ 60% reduction in data processing time via automation",
-            "📊 Developed 20+ interactive dashboards for C-level executives",
-            "🎯 Led data-driven initiatives impacting 100K+ customers"
-        ]
-```
+My background is in **data analysis**, so I design software around measurable business outcomes. The clearest example is a delivery platform that cut **order rejections from 7% to 1%**.
+
+- 🛠️ Strongest in **Python, FastAPI, PostgreSQL, Docker and CI/CD (GitHub Actions)**. **Rust** is my favorite language.
+- 🤖 I use **AI-assisted development** (LLMs, MCP, agentic coding) every day, which lets me pick up new stacks quickly.
+- 🎓 Studying **Systems & Computer Engineering** at **Universidad Privada del Norte (UPN)**.
+- 🎯 Interested in **remote roles**, **freelance projects** and hard problems in logistics, data and automation.
 
 ---
 
-## 🛠️ Arsenal Tecnológico
+## Tech stack
 
-<div align="center">
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=python,fastapi,rust,postgres,docker,githubactions,ts,react,nodejs,express,prisma,vite,sqlite,nginx,linux,git&perline=16" alt="Tech stack" />
+</p>
 
-### 💻 Lenguajes de Programación
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![R](https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white)
-
-### ☁️ Cloud & Big Data Ecosystem
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
-![Google Cloud](https://img.shields.io/badge/GCP-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)
-![Microsoft Azure](https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoft-azure&logoColor=white)
-![Databricks](https://img.shields.io/badge/Databricks-FF3621?style=for-the-badge&logo=databricks&logoColor=white)
-![Apache Spark](https://img.shields.io/badge/Apache_Spark-E25A1C?style=for-the-badge&logo=apache-spark&logoColor=white)
-
-### 📊 Data Science & Analytics
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
-![Scikit-learn](https://img.shields.io/badge/Scikit_learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
-
-### 📈 Visualization & BI Tools
-![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=power-bi&logoColor=black)
-![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white)
-![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white)
-![Excel](https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)
-
-### 🔧 Development & Infrastructure
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
-
-</div>
+| Area | Technologies |
+|---|---|
+| **Backend** | Python, FastAPI, SQLAlchemy (async), Alembic, Pydantic, APScheduler, Node.js, Express, Prisma, REST APIs, JWT/OAuth |
+| **Frontend** | React, TypeScript, Vite, Next.js, Leaflet / MapLibre, Recharts, ECharts |
+| **Mobile** | React Native, Expo, offline-first sync, SQLite (encrypted), GPS, camera, biometrics |
+| **Data** | PostgreSQL, SQL Server, SQLite, ETL pipelines, ERP integration, Pandas, Power BI |
+| **DevOps** | Docker, Docker Compose, GitHub Actions CI/CD, Nginx, Linux servers, Sentry, mutation testing |
+| **Geo & integrations** | OSRM routing, GPS telemetry, WhatsApp gateway, Google Sheets API, MCP servers |
+| **Languages** | Python, TypeScript, JavaScript, SQL, Rust |
 
 ---
 
-## 💼 Trayectoria Profesional
+## Featured projects
 
-### 🏢 UBYCALL – Pizza Hut Salvador
-**🎯 Analista de Datos Call Center** | *Feb 2023 - Nov 2024*
+> Most of my work is **in production at the companies I build for**, so those repositories are private (🔒). I'm happy to walk through the architecture and code in an interview.
 
-- 📈 **Incrementé conversiones en 15%** mediante análisis predictivo de comportamiento de clientes
-- 🔍 Desarrollé sistema de alertas en tiempo real para identificación temprana de tendencias
-- 📊 Implementé dashboards ejecutivos que redujeron tiempo de toma de decisiones en 40%
-- 👥 Lideré iniciativas de data-driven optimization que impactaron a 50+ agentes
-- 🤖 Automaticé 80% de reportes manuales usando Python y SQL avanzado
+### 🚚 Mi Ruta — Delivery, GPS Tracking & Route Settlement Platform 🔒
 
-**Logros Clave:**
-- 🎯 ROI de 300% en proyectos de optimización basados en datos
-- 📞 Mejora del 25% en customer satisfaction score
-- ⚡ Reducción del 35% en tiempo promedio de llamadas
+An end-to-end logistics platform for a mass-consumer distributor, with three parts: a **mobile app for truck drivers**, a **web control tower** for operations, and a **central API** connected to the company's ERP.
 
-### 🏦 ALFIN BANCO
-**💰 Analista Financiero** | *Mar 2022 - Dic 2022*
+- 📉 **Reduced order rejections from 7% to 1%** by giving drivers and dispatchers real-time visibility of every order, customer and delivery state.
+- 🛰️ **Real-time GPS truck tracking** and automatic identification of customers already served, which made routes faster and deliveries more effective.
+- 🧠 **Promotion identification engine.** The ERP exports invoices with the link between free-goods lines and their promotions lost. The engine rebuilds that link across **14 promotion types** (progressive N+M, tiered, combos, discounts) and recalculates bonuses when a customer partially rejects an order. It is built from pure functions, covered by tests and validated against real dispatches.
+- 📱 **Offline-first** React Native app with maps, photo evidence, biometric login and deferred sync.
+- ⚙️ Hundreds of automated tests (pytest + Jest), **mutation testing**, 6 **GitHub Actions** pipelines, Dockerized deployments and Sentry monitoring.
 
-- 🎯 **Reduje la tasa de impagos** mediante modelos de machine learning para scoring crediticio
-- 📋 Desarrollé pipeline ETL automatizado procesando 100K+ transacciones diarias
-- 💡 Creé sistema de early warning para riesgos financieros
-- ⚡ Optimicé procesos de reporting reduciendo tiempo manual en 70%
+`Python` `FastAPI` `PostgreSQL` `SQL Server` `SQLAlchemy` `React` `TypeScript` `React Native` `Expo` `MapLibre` `OSRM` `Docker` `GitHub Actions`
 
-**Impacto Medible:**
-- 📉 Reducción del 18% en pérdidas por impagos
-- 🚀 Incremento del 22% en eficiencia operacional
-- 📊 Automatización de 15+ reportes regulatorios
+### More projects
 
----
+| Project | What it does | Stack |
+|---|---|---|
+| **🛒 Ventory Multicanal** 🔒 | Offline-first field sales platform with a mobile app for sellers and supervisors plus an admin dashboard. Includes encrypted local storage (AES-256), GPS tracking, fake-GPS detection, device binding and automatic sync. | FastAPI · PostgreSQL · React Native · React · Docker · CI |
+| **📍 GeoCamionRuta** 🔒 | Fleet telemetry ingester. Polls the GPS API for every truck, stores position history and derives stops automatically. | Python · asyncio · httpx · PostgreSQL · Alembic · Docker |
+| **🧠 TomaPedidos** 🔒 *(in progress)* | Suggested-order recommendation engine for field sellers, built on repurchase cycles, market-basket analysis and an ML ranker backtested on 9 years of sales history. | Python · PostgreSQL · Machine Learning |
+| **📊 AUSPEX** 🔒 | Sales supervisor dashboard with real-time KPIs, rankings and risk alerts. Migrated from Google Apps Script to a modern web and mobile stack. | Node.js · TypeScript · Prisma · PostgreSQL · React Native |
+| **📈 AurenPulse** 🔒 | Internal product analytics for leadership: who uses each company system, for how long, usage heatmaps and churn, with Excel export. | FastAPI · PostgreSQL · Docker |
+| **💰 Finanzas AI** 🔒 | Personal finance tracker you operate by chatting with an AI assistant. Uses a custom **MCP server** and a FastAPI dashboard. | Python · FastMCP · FastAPI · SQLite · ECharts |
 
-## 🚀 Proyectos Destacados
-
-<div align="center">
-
-| 🎯 Proyecto | 🛠️ Stack Tecnológico | 📈 Impacto Business |
-|-------------|----------------------|-------------------|
-| **🔄 Data Pipeline Inteligente** | Python, Apache Airflow, AWS S3, Redshift | 60% ↓ tiempo procesamiento |
-| **📈 Dashboard Predictivo 360°** | Power BI, ML.NET, Azure Functions | 15% ↑ conversiones |
-| **🎯 Credit Risk ML Model** | Python, Scikit-learn, XGBoost, MLflow | 18% ↓ default rate |
-| **📞 Real-time Call Analytics** | Genesys Cloud API, Kafka, Elasticsearch | 25% ↑ customer satisfaction |
-| **🤖 Automated Reporting Suite** | Python, Flask, Docker, PostgreSQL | 70% ↓ manual work |
-
-</div>
+**…and 60+ more repositories** covering ETL bots, WhatsApp automations, BI dashboards, database documentation tools and more.
 
 ---
 
-## 📊 GitHub Statistics
+## Experience
 
-<div align="center">
-  
-![Italo's GitHub Stats](https://github-readme-stats.vercel.app/api?username=ItaloFabioSinisiQ&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00D9FF&icon_color=00D9FF&text_color=FFFFFF)
+**Full Stack Developer · Business Intelligence** — *Auren* · Dec 2025 – Present
+- Lead developer for the BI area, responsible for the design, development and deployment of internal platforms for logistics, sales and leadership.
+- Built the **Mi Ruta** delivery platform, which **cut order rejections from 7% to 1%** and added real-time GPS control of the truck fleet.
+- Developed the promotion identification engine, field sales apps, a recommendation engine and analytics dashboards on top of the company ERP (SQL Server → PostgreSQL).
+- Run Docker-based deployments and GitHub Actions CI/CD on the company's own servers.
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=ItaloFabioSinisiQ&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00D9FF&text_color=FFFFFF)
+**Call Center Data Analyst** — *UBYCALL (Pizza Hut)* · Feb 2023 – Nov 2024
+- **Increased conversions by 15%** through predictive analysis of customer behavior.
+- **Automated 80% of manual reports** with Python and SQL, and built executive dashboards in Power BI.
 
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=ItaloFabioSinisiQ&theme=tokyonight&hide_border=true&background=0D1117&stroke=00D9FF&ring=00D9FF&fire=FF6B6B&currStreakLabel=00D9FF)
-
-</div>
-
----
-
-## 🏆 Certificaciones & Formación
-
-<div align="center">
-
-| 🎓 Institución | 📜 Certificación | 🗓️ Estado |
-|---------------|------------------|-----------|
-| **SENCICO** | Administración de Obras | ✅ Completado |
-| **EDTEAM** | Python & Advanced Data Analysis | ✅ Certificado |
-| **EDTEAM** | SQL Database Management Pro | ✅ Certificado |
-| **Microsoft** | Power BI Data Analyst Associate | ✅ Certificado |
-| **EDTEAM** | REST API Development | ✅ Certificado |
-| **Genesys** | Cloud Platform Certified | ✅ Certificado |
-| **Scrum Alliance** | Certified ScrumMaster (CSM) | ✅ Certificado |
-| **AWS** | Solutions Architect Associate | 🎯 En progreso |
-
-</div>
+**Financial Analyst** — *Alfin Banco* · Mar 2022 – Dec 2022
+- Built machine learning credit-scoring models that **reduced default losses by 18%**.
+- Developed an automated ETL pipeline processing **100K+ daily transactions**.
 
 ---
 
-## 🎯 Roadmap 2025
+## Education & certifications
 
-```mermaid
-graph TD
-    A[Q1 2025] --> B[AWS/GCP Professional Cert]
-    A --> C[Advanced MLOps]
-    B --> D[Q2 2025: Team Leadership]
-    C --> D
-    D --> E[Q3 2025: Open Source Contributions]
-    D --> F[Deep Learning Specialization]
-    E --> G[Q4 2025: Tech Conference Speaker]
-    F --> G
-    
-    style A fill:#00D9FF,stroke:#000,stroke-width:2px,color:#000
-    style G fill:#FF6B6B,stroke:#000,stroke-width:2px,color:#fff
-```
-
-**🚀 Objetivos Estratégicos:**
-- 🤖 **Deep Learning & NLP:** Especializarme en modelos de lenguaje y computer vision
-- ☁️ **Cloud Architecture:** Obtener certificaciones AWS/GCP Professional
-- 👥 **Technical Leadership:** Liderar equipos multidisciplinarios de Data Science
-- 🌟 **Open Source:** Contribuir a proyectos que impacten la comunidad global
-- 🎤 **Knowledge Sharing:** Ser speaker en conferencias internacionales de tecnología
-
----
-
-## 📈 Contribuciones & Actividad
-
-<div align="center">
-
-![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=ItaloFabioSinisiQ&theme=tokyo-night&bg_color=0D1117&color=00D9FF&line=00D9FF&point=FF6B6B&area=true&hide_border=true)
-
-</div>
-
----
-
-## 🌟 Skills Radar
-
-<div align="center">
-
-```
-         Data Analysis ████████████ 95%
-      Machine Learning ██████████░░ 85%
-     Cloud Computing ███████████░ 90%
-          Visualization ████████████ 95%
-                    SQL ████████████ 95%
-                 Python ███████████░ 90%
-           Leadership ████████░░░░ 70%
-      DevOps/MLOps ███████░░░░░ 60%
-```
-
-</div>
-
----
-
-## 💡 Philosophy & Values
-
-> *"En la era de la información, los datos son el activo más valioso, pero su verdadero poder se libera cuando se transforman en decisiones inteligentes que crean impacto real en las personas."*
-
-**🔑 Principios Fundamentales:**
-- **Data-Driven Decision Making:** Cada decisión debe estar respaldada por evidencia sólida
-- **Continuous Learning:** La tecnología evoluciona, yo también
-- **Collaboration:** Los mejores insights surgen del trabajo en equipo
-- **Ethics in AI:** Responsabilidad y transparencia en cada modelo
-- **Business Impact:** La técnica al servicio de resultados medibles
-
----
-
-## 📫 Let's Connect & Collaborate!
-
-<div align="center">
-
-**🤝 ¿Tienes un proyecto desafiante? ¡Colaboremos!**
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Conectar-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0077B5)](https://www.linkedin.com/in/italo-fabio-sinisi-quintana/)
-[![WhatsApp](https://img.shields.io/badge/WhatsApp-Contactar-25D366?style=for-the-badge&logo=whatsapp&logoColor=white&labelColor=25D366)](https://wa.me/51977170609)
-[![Email](https://img.shields.io/badge/Email-Escribir-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=D14836)](mailto:sinisiquintanaitalo@gmail.com)
-
----
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer&text=Thanks%20for%20visiting!&fontSize=30&fontColor=fff&animation=twinkling"/>
-
-**⭐ Si mi trabajo te inspira, no olvides dar una estrella a mis repositorios ⭐**
-
-*"Los datos son el nuevo petróleo, pero la analítica es la refinería que crea valor real"* 📊✨
+- 🎓 **B.S. Systems & Computer Engineering** — Universidad Privada del Norte (UPN) · *In progress*
+- **AWS Certified Solutions Architect – Associate** · *Coming soon*
+- **Microsoft Certified: Power BI Data Analyst Associate**
+- **Certified ScrumMaster (CSM)** — Scrum Alliance
+- **Genesys Cloud Certified**
+- **EDTEAM:** Python & Data Analysis · SQL Databases · REST API Development
 
 ---
 
 <div align="center">
-<sub>🚀 Built with passion by <a href="https://github.com/ItaloFabioSinisiQ">Italo Sinisi</a> | Last updated: June 2025</sub>
-</div>
+
+**Have a challenging project in mind? Let's talk.**
+
+[LinkedIn](https://www.linkedin.com/in/italo-fabio-sinisi-quintana/) · [sinisiquintanaitalo@gmail.com](mailto:sinisiquintanaitalo@gmail.com)
 
 </div>
