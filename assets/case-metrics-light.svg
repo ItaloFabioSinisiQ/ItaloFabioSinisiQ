@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="150" viewBox="0 0 1200 150" role="img" aria-label="RutaLiquidador at a glance" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+<title>RutaLiquidador at a glance</title>
+<g transform="translate(0.0,0)">
+<rect x="0.5" y="0.5" width="287.0" height="149" rx="6" fill="#f6f8fa" stroke="#d0d7de"/>
+<text x="24" y="38" font-size="13" fill="#59636e">REST API endpoints</text>
+<text x="24" y="92" font-size="38" font-weight="700" fill="#1f2328">207</text>
+<rect x="24" y="108" width="28" height="2" fill="#2a78d6"/>
+<text x="24" y="130" font-size="12" fill="#6e7781">FastAPI · JWT · rate limiting</text>
+</g>
+<g transform="translate(304.0,0)">
+<rect x="0.5" y="0.5" width="287.0" height="149" rx="6" fill="#f6f8fa" stroke="#d0d7de"/>
+<text x="24" y="38" font-size="13" fill="#59636e">Automated tests</text>
+<text x="24" y="92" font-size="38" font-weight="700" fill="#1f2328">7,700+</text>
+<rect x="24" y="108" width="28" height="2" fill="#2a78d6"/>
+<text x="24" y="130" font-size="12" fill="#6e7781">pytest · Jest · Vitest · Playwright</text>
+</g>
+<g transform="translate(608.0,0)">
+<rect x="0.5" y="0.5" width="287.0" height="149" rx="6" fill="#f6f8fa" stroke="#d0d7de"/>
+<text x="24" y="38" font-size="13" fill="#59636e">Data model</text>
+<text x="24" y="92" font-size="38" font-weight="700" fill="#1f2328">47 tables</text>
+<rect x="24" y="108" width="28" height="2" fill="#2a78d6"/>
+<text x="24" y="130" font-size="12" fill="#6e7781">PostgreSQL 16 · 60 migrations</text>
+</g>
+<g transform="translate(912.0,0)">
+<rect x="0.5" y="0.5" width="287.0" height="149" rx="6" fill="#f6f8fa" stroke="#d0d7de"/>
+<text x="24" y="38" font-size="13" fill="#59636e">Field rollout</text>
+<text x="24" y="92" font-size="38" font-weight="700" fill="#1f2328">43 devices</text>
+<rect x="24" y="108" width="28" height="2" fill="#2a78d6"/>
+<text x="24" y="130" font-size="12" fill="#6e7781">Driver app in daily production use</text>
+</g>
+</svg>
