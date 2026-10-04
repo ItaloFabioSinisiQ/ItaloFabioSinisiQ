@@ -476,23 +476,44 @@ def lang_button(t, lang, active):
 
 
 def cv_button(t, c):
-    """Primary call to action: a filled pill with a download icon."""
-    label, kind = c["cv"]
-    w, h = 214, 44
-    ix, iy = 26, h / 2
+    """Compact outlined pill with a download icon, sized to sit in the top bar."""
+    label, _ = c["cv"]
+    h = 30
+    w = 46 + round(len(label) * 7.6)
+    ix, iy = 17, h / 2
     icon = (
-        f'<path d="M{ix},{iy - 9} V{iy + 3} M{ix - 5},{iy - 2} L{ix},{iy + 3} L{ix + 5},{iy - 2} '
-        f'M{ix - 8},{iy + 9} H{ix + 8}" fill="none" stroke="{t["on_accent"]}" stroke-width="2" '
+        f'<path d="M{ix},{iy - 6} V{iy + 2} M{ix - 3.5},{iy - 1.5} L{ix},{iy + 2} L{ix + 3.5},{iy - 1.5} '
+        f'M{ix - 5.5},{iy + 6} H{ix + 5.5}" fill="none" stroke="{t["accent"]}" stroke-width="1.7" '
         f'stroke-linecap="round" stroke-linejoin="round"/>'
     )
     body = (
-        f'<rect x="0.5" y="0.5" width="{w - 1}" height="{h - 1}" rx="{h / 2}" fill="{t["accent"]}"/>'
-        f'{icon}'
-        f'<text x="46" y="28" font-size="15" font-weight="600" fill="{t["on_accent"]}">{label}</text>'
-        f'<line x1="158" y1="13" x2="158" y2="{h - 13}" stroke="{t["on_accent"]}" stroke-opacity="0.45"/>'
-        f'<text x="172" y="27.5" font-size="12" font-weight="600" letter-spacing="0.8" fill="{t["on_accent"]}" fill-opacity="0.85">{kind}</text>'
+        f'<rect x="0.75" y="0.75" width="{w - 1.5}" height="{h - 1.5}" rx="{h / 2}" fill="none" '
+        f'stroke="{t["accent"]}" stroke-width="1.5"/>{icon}'
+        f'<text x="31" y="20" font-size="13" font-weight="600" fill="{t["accent"]}">{label}</text>'
     )
     return svg(h, body, label, width=w)
+
+
+def theme_button(t, mode):
+    """Round button showing the current theme: a sun in light mode, a moon in dark mode."""
+    size, c = 30, 15
+    frame_ = f'<circle cx="{c}" cy="{c}" r="{c - 0.75}" fill="none" stroke="{t["border"]}" stroke-width="1.5"/>'
+    if mode == "light":
+        rays = "".join(
+            f'<line x1="{c}" y1="{c - 9}" x2="{c}" y2="{c - 7}" transform="rotate({a} {c} {c})"/>'
+            for a in range(0, 360, 45)
+        )
+        icon = (
+            f'<circle cx="{c}" cy="{c}" r="4" fill="none" stroke="{t["text"]}" stroke-width="1.6"/>'
+            f'<g stroke="{t["text"]}" stroke-width="1.6" stroke-linecap="round">{rays}</g>'
+        )
+    else:
+        icon = (
+            f'<path d="M{c + 2.5},{c - 7.5} A7.5,7.5 0 1 0 {c + 7.5},{c + 2.5} A6,6 0 0 1 {c + 2.5},{c - 7.5} Z" '
+            f'fill="none" stroke="{t["text"]}" stroke-width="1.6" stroke-linejoin="round"/>'
+        )
+    title = "Light theme" if mode == "light" else "Dark theme"
+    return svg(size, frame_ + icon, title, width=size)
 
 
 GRAPHICS = {
@@ -522,6 +543,8 @@ def main():
                 (ASSETS / f"lang-{lang}{state}-{mode}.svg").write_text(
                     lang_button(theme, lang, active), encoding="utf-8")
                 count += 1
+        (ASSETS / f"theme-{mode}.svg").write_text(theme_button(theme, mode), encoding="utf-8")
+        count += 1
     print(f"wrote {count} files to {ASSETS}")
 
 

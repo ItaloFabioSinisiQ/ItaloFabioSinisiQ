@@ -1,4 +1,6 @@
 <p align="right">
+  <a href="https://github.com/settings/appearance"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/theme-dark.svg"><img src="assets/theme-light.svg" height="30" alt="Cambiar a tema claro u oscuro"></picture></a>
+  <a href="https://github.com/ItaloFabioSinisiQ/ItaloFabioSinisiQ/raw/main/cv/Italo-Sinisi-CV-ES.pdf"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cv-button-es-dark.svg"><img src="assets/cv-button-es-light.svg" height="30" alt="Descargar CV (PDF)"></picture></a>
   <a href="https://github.com/ItaloFabioSinisiQ"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/lang-en-dark.svg"><img src="assets/lang-en-light.svg" height="30" alt="Read in English"></picture></a>
   <a href="https://github.com/ItaloFabioSinisiQ/ItaloFabioSinisiQ/blob/main/README.es.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/lang-es-active-dark.svg"><img src="assets/lang-es-active-light.svg" height="30" alt="Español (actual)"></picture></a>
 </p>
@@ -10,10 +12,6 @@
 
 <p align="center">
   <br>
-  <a href="https://github.com/ItaloFabioSinisiQ/ItaloFabioSinisiQ/raw/main/cv/Italo-Sinisi-CV-ES.pdf"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cv-button-es-dark.svg"><img src="assets/cv-button-es-light.svg" height="44" alt="Descargar CV (PDF)"></picture></a>
-</p>
-
-<p align="center">
   <a href="mailto:sinisiquintanaitalo@gmail.com"><b>Email</b></a> &nbsp;·&nbsp;
   <a href="https://www.linkedin.com/in/italo-fabio-sinisi-quintana/"><b>LinkedIn</b></a> &nbsp;·&nbsp;
   <a href="https://italofabiosinisiq.github.io/-dev-holaMundo-true-/"><b>Portafolio</b></a> &nbsp;·&nbsp;
