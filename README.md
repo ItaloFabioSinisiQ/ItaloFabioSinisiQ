@@ -1,5 +1,5 @@
 <p align="right">
-  <a href="https://github.com/settings/appearance"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/theme-dark.svg"><img src="assets/theme-light.svg" height="30" alt="Switch light or dark theme"></picture></a>
+  <a href="https://github.com/settings/appearance"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/theme-dark.svg"><img src="assets/theme-light.svg" height="30" align="left" alt="Switch light or dark theme"></picture></a>
   <a href="https://github.com/ItaloFabioSinisiQ/ItaloFabioSinisiQ/raw/main/cv/Italo-Sinisi-CV-EN.pdf"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cv-button-dark.svg"><img src="assets/cv-button-light.svg" height="30" alt="Download CV (PDF)"></picture></a>
   <a href="https://github.com/ItaloFabioSinisiQ"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/lang-en-active-dark.svg"><img src="assets/lang-en-active-light.svg" height="30" alt="English (current)"></picture></a>
   <a href="https://github.com/ItaloFabioSinisiQ/ItaloFabioSinisiQ/blob/main/README.es.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/lang-es-dark.svg"><img src="assets/lang-es-light.svg" height="30" alt="Leer en español"></picture></a>
