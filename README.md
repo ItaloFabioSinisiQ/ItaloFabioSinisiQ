@@ -10,6 +10,10 @@
 
 <p align="center">
   <br>
+  <a href="https://github.com/ItaloFabioSinisiQ/ItaloFabioSinisiQ/raw/main/cv/Italo-Sinisi-CV-EN.pdf"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cv-button-dark.svg"><img src="assets/cv-button-light.svg" height="44" alt="Download CV (PDF)"></picture></a>
+</p>
+
+<p align="center">
   <a href="mailto:sinisiquintanaitalo@gmail.com"><b>Email</b></a> &nbsp;·&nbsp;
   <a href="https://www.linkedin.com/in/italo-fabio-sinisi-quintana/"><b>LinkedIn</b></a> &nbsp;·&nbsp;
   <a href="https://italofabiosinisiq.github.io/-dev-holaMundo-true-/"><b>Portfolio</b></a> &nbsp;·&nbsp;
@@ -39,7 +43,7 @@ Full Stack Developer and Data Analyst with 5+ years of experience in software an
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/journey-dark.svg">
-  <img src="assets/journey-light.svg" width="100%" alt="Career path from data to software: Financial Analyst at Alfin Banco in 2022, Data Analyst at UBYCALL in 2023 and 2024, Full Stack Developer at Auren since 2025.">
+  <img src="assets/journey-light.svg" width="100%" alt="Career path from data to software: Administrative Assistant at a real estate company in 2021 and 2022, Financial Analyst at Alfin Banco in 2022, Data Analyst at UBYCALL in 2023 and 2024, Full Stack Developer at Auren since 2025.">
 </picture>
 
 ### Full Stack Developer, Business Intelligence — Auren
@@ -59,8 +63,13 @@ Full Stack Developer and Data Analyst with 5+ years of experience in software an
 ### Financial Analyst — Alfin Banco
 <sub>Banking · March 2022 – December 2022</sub>
 
-- Developed machine learning credit-scoring models that reduced default losses by **18%**.
+- Built credit-risk scoring models that reduced default losses by **18%**.
 - Built an automated ETL pipeline processing more than **100,000 transactions per day**.
+
+### Administrative Assistant (internship) — Gestión Inmobiliaria Pacífico
+<sub>Real estate · May 2021 – March 2022</sub>
+
+- Restructured internal databases with SQL and built Power BI reports that reduced time spent on administrative tasks.
 
 ## Featured project: RutaLiquidador
 
@@ -164,5 +173,5 @@ Currently preparing for AWS Certified Solutions Architect – Associate.
 ---
 
 <p align="center">
-  Open to new opportunities. The fastest way to reach me is <a href="mailto:sinisiquintanaitalo@gmail.com">email</a>.
+  Open to new opportunities. The fastest way to reach me is <a href="mailto:sinisiquintanaitalo@gmail.com">email</a>, or <a href="https://github.com/ItaloFabioSinisiQ/ItaloFabioSinisiQ/raw/main/cv/Italo-Sinisi-CV-EN.pdf">download my CV</a>.
 </p>

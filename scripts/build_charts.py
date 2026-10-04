@@ -82,10 +82,12 @@ COPY = {
         ),
         "approach": ["Metric", "Design", "Build", "Test", "Ship", "Measure"],
         "journey": ("FROM DATA TO SOFTWARE", [
-            ("2022", "Financial Analyst", "Alfin Banco · credit risk ML, ETL"),
-            ("2023 – 2024", "Data Analyst", "UBYCALL · predictive analytics, BI"),
-            ("2025 – PRESENT", "Full Stack Developer", "Auren · logistics and BI platforms"),
+            ("2021 – 2022", "Admin Assistant", "Real estate · SQL, Power BI"),
+            ("2022", "Financial Analyst", "Alfin Banco · credit risk"),
+            ("2023 – 2024", "Data Analyst", "UBYCALL · analytics, BI"),
+            ("2025 – PRESENT", "Full Stack Dev", "Auren · logistics, BI"),
         ]),
+        "cv": ("Download CV", "PDF"),
         "flow": ("A DAY ON THE ROUTE", [
             ("ERP sync", ["Orders, routes and", "promotions load", "at 06:00"]),
             ("Dispatch", ["Each crew gets", "its route on the", "driver app"]),
@@ -150,10 +152,12 @@ COPY = {
         ),
         "approach": ["Métrica", "Diseño", "Desarrollo", "Pruebas", "Despliegue", "Medición"],
         "journey": ("DE LOS DATOS AL SOFTWARE", [
-            ("2022", "Analista Financiero", "Alfin Banco · ML de riesgo, ETL"),
-            ("2023 – 2024", "Analista de Datos", "UBYCALL · analítica predictiva, BI"),
-            ("2025 – HOY", "Full Stack Developer", "Auren · plataformas de logística y BI"),
+            ("2021 – 2022", "Asistente Adm.", "Inmobiliaria · SQL, Power BI"),
+            ("2022", "Analista Financiero", "Alfin Banco · riesgo"),
+            ("2023 – 2024", "Analista de Datos", "UBYCALL · analítica, BI"),
+            ("2025 – HOY", "Full Stack Dev", "Auren · logística, BI"),
         ]),
+        "cv": ("Descargar CV", "PDF"),
         "flow": ("UN DÍA DE RUTA", [
             ("Sync del ERP", ["Pedidos, rutas y", "promociones a", "las 06:00"]),
             ("Despacho", ["Cada tripulación", "recibe su ruta", "en la app"]),
@@ -370,7 +374,8 @@ def approach(t, c):
 
 def journey(t, c):
     caption, stages = c["journey"]
-    h, node_w, gap, top, node_h = 150, 256, 32, 46, 88
+    h, gap, top, node_h = 150, 24, 46, 88
+    node_w = (W - 48 - gap * (len(stages) - 1)) / len(stages)
     parts = [arrow_marker(t), caps(24, 26, caption, t)]
     for i, (period, role, place) in enumerate(stages):
         x = 24 + i * (node_w + gap)
@@ -378,9 +383,9 @@ def journey(t, c):
         parts.append(
             f'<rect x="{x}" y="{top}" width="{node_w}" height="{node_h}" rx="6" fill="{t["panel"]}" '
             f'stroke="{t["accent"] if current else t["border"]}" stroke-width="{1.5 if current else 1}"/>'
-            + caps(x + 18, top + 26, period, t)
-            + f'<text x="{x + 18}" y="{top + 52}" font-size="16" font-weight="600" fill="{t["text"]}">{role}</text>'
-            f'<text x="{x + 18}" y="{top + 74}" font-size="13" fill="{t["text2"]}">{place}</text>'
+            + caps(x + 16, top + 26, period, t)
+            + f'<text x="{x + 16}" y="{top + 52}" font-size="15" font-weight="600" fill="{t["text"]}">{role}</text>'
+            f'<text x="{x + 16}" y="{top + 74}" font-size="13" fill="{t["text2"]}">{place}</text>'
         )
         if not current:
             mid = top + node_h / 2
@@ -470,6 +475,26 @@ def lang_button(t, lang, active):
     return svg(h, body, label, width=w)
 
 
+def cv_button(t, c):
+    """Primary call to action: a filled pill with a download icon."""
+    label, kind = c["cv"]
+    w, h = 214, 44
+    ix, iy = 26, h / 2
+    icon = (
+        f'<path d="M{ix},{iy - 9} V{iy + 3} M{ix - 5},{iy - 2} L{ix},{iy + 3} L{ix + 5},{iy - 2} '
+        f'M{ix - 8},{iy + 9} H{ix + 8}" fill="none" stroke="{t["on_accent"]}" stroke-width="2" '
+        f'stroke-linecap="round" stroke-linejoin="round"/>'
+    )
+    body = (
+        f'<rect x="0.5" y="0.5" width="{w - 1}" height="{h - 1}" rx="{h / 2}" fill="{t["accent"]}"/>'
+        f'{icon}'
+        f'<text x="46" y="28" font-size="15" font-weight="600" fill="{t["on_accent"]}">{label}</text>'
+        f'<line x1="158" y1="13" x2="158" y2="{h - 13}" stroke="{t["on_accent"]}" stroke-opacity="0.45"/>'
+        f'<text x="172" y="27.5" font-size="12" font-weight="600" letter-spacing="0.8" fill="{t["on_accent"]}" fill-opacity="0.85">{kind}</text>'
+    )
+    return svg(h, body, label, width=w)
+
+
 GRAPHICS = {
     "header": header,
     "impact": impact,
@@ -479,6 +504,7 @@ GRAPHICS = {
     "journey": journey,
     "delivery-flow": delivery_flow,
     "engine-flow": engine_flow,
+    "cv-button": cv_button,
 }
 
 

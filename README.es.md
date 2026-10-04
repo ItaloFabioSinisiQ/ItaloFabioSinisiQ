@@ -10,6 +10,10 @@
 
 <p align="center">
   <br>
+  <a href="https://github.com/ItaloFabioSinisiQ/ItaloFabioSinisiQ/raw/main/cv/Italo-Sinisi-CV-ES.pdf"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cv-button-es-dark.svg"><img src="assets/cv-button-es-light.svg" height="44" alt="Descargar CV (PDF)"></picture></a>
+</p>
+
+<p align="center">
   <a href="mailto:sinisiquintanaitalo@gmail.com"><b>Email</b></a> &nbsp;·&nbsp;
   <a href="https://www.linkedin.com/in/italo-fabio-sinisi-quintana/"><b>LinkedIn</b></a> &nbsp;·&nbsp;
   <a href="https://italofabiosinisiq.github.io/-dev-holaMundo-true-/"><b>Portafolio</b></a> &nbsp;·&nbsp;
@@ -39,7 +43,7 @@ Desarrollador Full Stack y Analista de Datos con más de 5 años de experiencia 
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/journey-es-dark.svg">
-  <img src="assets/journey-es-light.svg" width="100%" alt="Trayectoria de los datos al software: Analista Financiero en Alfin Banco en 2022, Analista de Datos en UBYCALL en 2023 y 2024, Full Stack Developer en Auren desde 2025.">
+  <img src="assets/journey-es-light.svg" width="100%" alt="Trayectoria de los datos al software: Asistente Administrativo en una inmobiliaria en 2021 y 2022, Analista Financiero en Alfin Banco en 2022, Analista de Datos en UBYCALL en 2023 y 2024, Full Stack Developer en Auren desde 2025.">
 </picture>
 
 ### Full Stack Developer, Inteligencia de Negocios — Auren
@@ -59,8 +63,13 @@ Desarrollador Full Stack y Analista de Datos con más de 5 años de experiencia 
 ### Analista Financiero — Alfin Banco
 <sub>Banca · Marzo 2022 – Diciembre 2022</sub>
 
-- Desarrollé modelos de scoring crediticio con machine learning que redujeron las pérdidas por impago en **18%**.
+- Desarrollé modelos de scoring de riesgo crediticio que redujeron las pérdidas por impago en **18%**.
 - Construí un pipeline ETL automatizado que procesa más de **100,000 transacciones por día**.
+
+### Asistente Administrativo (prácticas) — Gestión Inmobiliaria Pacífico
+<sub>Inmobiliaria · Mayo 2021 – Marzo 2022</sub>
+
+- Reestructuré bases de datos internas con SQL y construí reportes en Power BI que redujeron el tiempo dedicado a tareas administrativas.
 
 ## Proyecto principal: RutaLiquidador
 
@@ -164,5 +173,5 @@ Actualmente preparando la certificación AWS Certified Solutions Architect – A
 ---
 
 <p align="center">
-  Abierto a nuevas oportunidades. La forma más rápida de contactarme es por <a href="mailto:sinisiquintanaitalo@gmail.com">correo</a>.
+  Abierto a nuevas oportunidades. La forma más rápida de contactarme es por <a href="mailto:sinisiquintanaitalo@gmail.com">correo</a>, o <a href="https://github.com/ItaloFabioSinisiQ/ItaloFabioSinisiQ/raw/main/cv/Italo-Sinisi-CV-ES.pdf">descarga mi CV</a>.
 </p>
