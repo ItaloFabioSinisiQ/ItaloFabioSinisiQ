@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="104" viewBox="0 0 880 104" role="img" aria-label="How I work" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+<title>How I work</title>
+<style>.flow{stroke-dasharray:5 5;animation:flow 1.4s linear infinite}@keyframes flow{to{stroke-dashoffset:-20}}@media (prefers-reduced-motion:reduce){.flow{animation:none;stroke-dasharray:none}}</style><defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#4493f8"/></marker></defs>
+<rect x="26" y="20" width="118" height="38" rx="19.0" fill="#151b23" stroke="#3d444d"/><text x="85.0" y="44" font-size="14" font-weight="600" text-anchor="middle" fill="#f0f6fc">Metric</text>
+<path d="M147,39.0 H165" fill="none" stroke="#4493f8" stroke-width="1.5" class="flow" marker-end="url(#arrow)"/>
+<rect x="168" y="20" width="118" height="38" rx="19.0" fill="#151b23" stroke="#3d444d"/><text x="227.0" y="44" font-size="14" font-weight="600" text-anchor="middle" fill="#f0f6fc">Design</text>
+<path d="M289,39.0 H307" fill="none" stroke="#4493f8" stroke-width="1.5" class="flow" marker-end="url(#arrow)"/>
+<rect x="310" y="20" width="118" height="38" rx="19.0" fill="#151b23" stroke="#3d444d"/><text x="369.0" y="44" font-size="14" font-weight="600" text-anchor="middle" fill="#f0f6fc">Build</text>
+<path d="M431,39.0 H449" fill="none" stroke="#4493f8" stroke-width="1.5" class="flow" marker-end="url(#arrow)"/>
+<rect x="452" y="20" width="118" height="38" rx="19.0" fill="#151b23" stroke="#3d444d"/><text x="511.0" y="44" font-size="14" font-weight="600" text-anchor="middle" fill="#f0f6fc">Test</text>
+<path d="M573,39.0 H591" fill="none" stroke="#4493f8" stroke-width="1.5" class="flow" marker-end="url(#arrow)"/>
+<rect x="594" y="20" width="118" height="38" rx="19.0" fill="#151b23" stroke="#3d444d"/><text x="653.0" y="44" font-size="14" font-weight="600" text-anchor="middle" fill="#f0f6fc">Ship</text>
+<path d="M715,39.0 H733" fill="none" stroke="#4493f8" stroke-width="1.5" class="flow" marker-end="url(#arrow)"/>
+<rect x="736" y="20" width="118" height="38" rx="19.0" fill="#4493f8" stroke="#4493f8"/><text x="795.0" y="44" font-size="14" font-weight="600" text-anchor="middle" fill="#0d1117">Measure</text>
+<path d="M795.0,62 C795.0,100 85.0,100 85.0,65" fill="none" stroke="#4493f8" stroke-width="1.5" class="flow" marker-end="url(#arrow)"/>
+</svg>

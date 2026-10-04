@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="404" viewBox="0 0 880 404" role="img" aria-label="RutaLiquidador system architecture" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+<title>RutaLiquidador system architecture</title>
+<style>.flow{stroke-dasharray:5 5;animation:flow 1.4s linear infinite}@keyframes flow{to{stroke-dashoffset:-20}}@media (prefers-reduced-motion:reduce){.flow{animation:none;stroke-dasharray:none}}</style><rect x="0.5" y="0.5" width="879" height="403" rx="6" fill="#151b23" stroke="#3d444d"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#4493f8"/></marker></defs>
+<text x="24" y="36" font-size="12" font-weight="600" letter-spacing="0.8" fill="#9198a1">DATA SOURCES</text>
+<text x="290" y="36" font-size="12" font-weight="600" letter-spacing="0.8" fill="#9198a1">PLATFORM CORE</text>
+<text x="656" y="36" font-size="12" font-weight="600" letter-spacing="0.8" fill="#9198a1">CLIENTS</text>
+<rect x="24" y="56" width="200" height="72" rx="6" fill="#0d1117" stroke="#3d444d"/><text x="40" y="86" font-size="15" font-weight="600" fill="#f0f6fc">ERP (SQL Server)</text><text x="40" y="108" font-size="13" fill="#9198a1">Orders and promotions</text>
+<path d="M224,92.0 H287" fill="none" stroke="#4493f8" stroke-width="1.5" class="flow" marker-end="url(#arrow)"/>
+<rect x="656" y="56" width="200" height="72" rx="6" fill="#0d1117" stroke="#3d444d"/><text x="672" y="86" font-size="15" font-weight="600" fill="#f0f6fc">Driver app</text><text x="672" y="108" font-size="13" fill="#9198a1">React Native · offline-first</text>
+<path d="M590,92.0 H653" fill="none" stroke="#4493f8" stroke-width="1.5" class="flow" marker-end="url(#arrow)"/>
+<rect x="24" y="144" width="200" height="72" rx="6" fill="#0d1117" stroke="#3d444d"/><text x="40" y="174" font-size="15" font-weight="600" fill="#f0f6fc">Fleet GPS tracker</text><text x="40" y="196" font-size="13" fill="#9198a1">Live truck positions</text>
+<path d="M224,180.0 H287" fill="none" stroke="#4493f8" stroke-width="1.5" class="flow" marker-end="url(#arrow)"/>
+<rect x="656" y="144" width="200" height="72" rx="6" fill="#0d1117" stroke="#3d444d"/><text x="672" y="174" font-size="15" font-weight="600" fill="#f0f6fc">Control tower</text><text x="672" y="196" font-size="13" fill="#9198a1">React · 27 views</text>
+<path d="M590,180.0 H653" fill="none" stroke="#4493f8" stroke-width="1.5" class="flow" marker-end="url(#arrow)"/>
+<rect x="24" y="232" width="200" height="72" rx="6" fill="#0d1117" stroke="#3d444d"/><text x="40" y="262" font-size="15" font-weight="600" fill="#f0f6fc">OSRM routing</text><text x="40" y="284" font-size="13" fill="#9198a1">Self-hosted Lima maps</text>
+<path d="M224,268.0 H287" fill="none" stroke="#4493f8" stroke-width="1.5" class="flow" marker-end="url(#arrow)"/>
+<rect x="656" y="232" width="200" height="72" rx="6" fill="#0d1117" stroke="#3d444d"/><text x="672" y="262" font-size="15" font-weight="600" fill="#f0f6fc">WhatsApp gateway</text><text x="672" y="284" font-size="13" fill="#9198a1">Operational alerts</text>
+<path d="M590,268.0 H653" fill="none" stroke="#4493f8" stroke-width="1.5" class="flow" marker-end="url(#arrow)"/>
+<rect x="290" y="56" width="300" height="248" rx="6" fill="#0d1117" stroke="#4493f8" stroke-width="1.5"/><text x="310" y="88" font-size="16" font-weight="600" fill="#f0f6fc">FastAPI backend</text><text x="310" y="110" font-size="13" fill="#9198a1">Python · SQLAlchemy · APScheduler</text><line x1="310" y1="128" x2="570" y2="128" stroke="#3d444d"/>
+<rect x="310" y="145" width="6" height="6" rx="1" fill="#4493f8"/><text x="324" y="154" font-size="13" fill="#f0f6fc">Promotion engine · 14 promotion types</text>
+<rect x="310" y="171" width="6" height="6" rx="1" fill="#4493f8"/><text x="324" y="180" font-size="13" fill="#f0f6fc">Route settlement and delivery log</text>
+<rect x="310" y="197" width="6" height="6" rx="1" fill="#4493f8"/><text x="324" y="206" font-size="13" fill="#f0f6fc">Offline conflict resolution, audit trail</text>
+<rect x="310" y="223" width="6" height="6" rx="1" fill="#4493f8"/><text x="324" y="232" font-size="13" fill="#f0f6fc">Scheduler · 12 background jobs</text>
+<line x1="310" y1="264" x2="570" y2="264" stroke="#3d444d"/><text x="310" y="290" font-size="14" font-weight="600" fill="#f0f6fc">PostgreSQL 16</text><text x="418" y="290" font-size="13" fill="#9198a1">47 tables · 60 migrations</text>
+<line x1="24" y1="332" x2="856" y2="332" stroke="#3d444d"/><text x="24" y="362" font-size="12" font-weight="600" letter-spacing="0.8" fill="#9198a1">DELIVERY</text><text x="134" y="362" font-size="13" fill="#f0f6fc">Docker Compose · Nginx · 6 GitHub Actions workflows · images on GHCR</text><text x="134" y="384" font-size="13" fill="#9198a1">Scripted releases with backup, smoke test and automatic rollback</text>
+</svg>

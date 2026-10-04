@@ -1,265 +1,168 @@
-# 🚀 Italo Fabio Sinisi Quintana / https://italofabiosinisiq.github.io/-dev-holaMundo-true-/
+<p align="right">
+  <a href="https://github.com/ItaloFabioSinisiQ"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/lang-en-active-dark.svg"><img src="assets/lang-en-active-light.svg" height="30" alt="English (current)"></picture></a>
+  <a href="https://github.com/ItaloFabioSinisiQ/ItaloFabioSinisiQ/blob/main/README.es.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/lang-es-dark.svg"><img src="assets/lang-es-light.svg" height="30" alt="Leer en español"></picture></a>
+</p>
 
-<div align="center">
-  
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=00D9FF&center=true&vCenter=true&width=435&lines=Data+Analyst+%7C+3%2B+Years+Experience;Cloud+Computing+Enthusiast;Machine+Learning+Developer;Transforming+Data+into+Insights)](https://git.io/typing-svg)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
+  <img src="assets/header-light.svg" width="100%" alt="Italo Fabio Sinisi Quintana. Full Stack Developer and Data Analyst building logistics, sales and BI platforms in production. 5+ years in software and data. Based in Lima, Peru (GMT-5), open to remote work. Currently Full Stack Developer at Auren.">
+</picture>
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/italo-fabio-sinisi-quintana/)
-[![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/51977170609)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sinisiquintanaitalo@gmail.com)
+<p align="center">
+  <br>
+  <a href="mailto:sinisiquintanaitalo@gmail.com"><b>Email</b></a> &nbsp;·&nbsp;
+  <a href="https://www.linkedin.com/in/italo-fabio-sinisi-quintana/"><b>LinkedIn</b></a> &nbsp;·&nbsp;
+  <a href="https://italofabiosinisiq.github.io/-dev-holaMundo-true-/"><b>Portfolio</b></a> &nbsp;·&nbsp;
+  <a href="https://wa.me/51977170609"><b>WhatsApp</b></a>
+</p>
 
-**Data Analyst | Cloud Computing | Machine Learning Enthusiast**
+## About
 
-<img src="https://komarev.com/ghpvc/?username=ItaloFabioSinisiQ&color=brightgreen" alt="Profile Views" />
+Full Stack Developer and Data Analyst with 5+ years of experience in software and data. At **Auren**, an FMCG distributor in Peru, I design, build and run the Business Intelligence area's platforms for last-mile delivery, field sales and executive reporting. I start every system from the business metric it has to move, and I measure that metric once the system is in production.
 
-</div>
+**Roles:** Full Stack Engineer · Backend Engineer (Python, FastAPI) · Software Engineer · Data Engineer · BI Developer<br>
+**Availability:** remote full-time or contract, freelance projects, and on-site roles in Lima · Time zone GMT-5 · Spanish (native)
 
----
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/approach-dark.svg">
+  <img src="assets/approach-light.svg" width="100%" alt="How I work: metric, design, build, test, ship and measure, then back to the metric.">
+</picture>
 
-## 🎯 Sobre Mí
+## Selected results
 
-**Data Analyst especializado** con más de **3 años de experiencia** transformando datos complejos en insights accionables que impulsan el crecimiento empresarial. Mi enfoque combina análisis técnico profundo con visión estratégica de negocio.
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/impact-dark.svg">
+  <img src="assets/impact-light.svg" width="100%" alt="Selected results: order rejection rate reduced from 7% to 1% with RutaLiquidador at Auren; sales conversion up 15% with predictive analytics at UBYCALL; credit default losses down 18% with credit scoring at Alfin Banco; 80% of reports automated with Python and SQL at UBYCALL.">
+</picture>
 
-```python
-class ItaloSinisi:
-    def __init__(self):
-        self.role = "Senior Data Analyst"
-        self.experience = "3+ años"
-        self.location = "Lima, Perú 🇵🇪"
-        self.passion = ["Data Science", "Cloud Architecture", "AI/ML"]
-        self.mission = "Democratizar el poder de los datos"
-        self.current_focus = "Machine Learning & Cloud Engineering"
-    
-    def get_expertise(self):
-        return {
-            "data_analysis": ["Statistical Analysis", "Predictive Modeling", "A/B Testing"],
-            "cloud_platforms": ["AWS", "GCP", "Azure", "Databricks"],
-            "programming": ["Python", "SQL", "JavaScript", "R"],
-            "visualization": ["Power BI", "Tableau", "Plotly", "D3.js"],
-            "big_data": ["Apache Spark", "ETL Pipelines", "Data Warehousing"],
-            "methodologies": ["Agile/SCRUM", "DataOps", "MLOps"]
-        }
-    
-    def career_highlights(self):
-        return [
-            "🚀 15% increase in conversion rates through advanced analytics",
-            "⚡ 60% reduction in data processing time via automation",
-            "📊 Developed 20+ interactive dashboards for C-level executives",
-            "🎯 Led data-driven initiatives impacting 100K+ customers"
-        ]
-```
+## Experience
 
----
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/journey-dark.svg">
+  <img src="assets/journey-light.svg" width="100%" alt="Career path from data to software: Financial Analyst at Alfin Banco in 2022, Data Analyst at UBYCALL in 2023 and 2024, Full Stack Developer at Auren since 2025.">
+</picture>
 
-## 🛠️ Arsenal Tecnológico
+### Full Stack Developer, Business Intelligence — Auren
+<sub>FMCG distribution · Lima, Peru · December 2025 – Present</sub>
 
-<div align="center">
+- Responsible for the design, development, deployment and operation of the BI area's internal platforms.
+- Built **RutaLiquidador**, the delivery and route settlement platform that reduced the order rejection rate **from 7% to 1%** and gave the office real-time GPS control of the truck fleet.
+- Built field sales applications, a sales contest engine, automated WhatsApp reporting and usage analytics on top of the company ERP.
+- Introduced containerized deployments, CI/CD pipelines and automated testing across projects.
 
-### 💻 Lenguajes de Programación
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![R](https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white)
+### Call Center Data Analyst — UBYCALL
+<sub>Contact-center outsourcer, Pizza Hut Peru account · February 2023 – November 2024</sub>
 
-### ☁️ Cloud & Big Data Ecosystem
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
-![Google Cloud](https://img.shields.io/badge/GCP-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)
-![Microsoft Azure](https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoft-azure&logoColor=white)
-![Databricks](https://img.shields.io/badge/Databricks-FF3621?style=for-the-badge&logo=databricks&logoColor=white)
-![Apache Spark](https://img.shields.io/badge/Apache_Spark-E25A1C?style=for-the-badge&logo=apache-spark&logoColor=white)
+- Increased sales conversion by **15%** through predictive analysis of customer behavior.
+- Automated **80%** of manual reporting with Python and SQL, and built executive dashboards in Power BI.
 
-### 📊 Data Science & Analytics
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
-![Scikit-learn](https://img.shields.io/badge/Scikit_learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+### Financial Analyst — Alfin Banco
+<sub>Banking · March 2022 – December 2022</sub>
 
-### 📈 Visualization & BI Tools
-![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=power-bi&logoColor=black)
-![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white)
-![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white)
-![Excel](https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)
+- Developed machine learning credit-scoring models that reduced default losses by **18%**.
+- Built an automated ETL pipeline processing more than **100,000 transactions per day**.
 
-### 🔧 Development & Infrastructure
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+## Featured project: RutaLiquidador
 
-</div>
+<sub>Last-mile delivery, fleet tracking and route settlement platform · private repository, in daily production use</sub>
 
----
+Each morning the company dispatches trucks across Lima, each with a crew of three to four people and dozens of stops, and mobile signal is available only about 64% of the shift. RutaLiquidador connects the ERP, the trucks and the office. Drivers confirm every stop from an offline-first mobile app, and the office follows the fleet live and settles each route to the cent.
 
-## 💼 Trayectoria Profesional
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/case-metrics-dark.svg">
+  <img src="assets/case-metrics-light.svg" width="100%" alt="RutaLiquidador at a glance: 207 REST API endpoints, more than 7,700 automated tests, 47 database tables and 43 devices in production.">
+</picture>
 
-### 🏢 UBYCALL – Pizza Hut Salvador
-**🎯 Analista de Datos Call Center** | *Feb 2023 - Nov 2024*
+### How it works
 
-- 📈 **Incrementé conversiones en 15%** mediante análisis predictivo de comportamiento de clientes
-- 🔍 Desarrollé sistema de alertas en tiempo real para identificación temprana de tendencias
-- 📊 Implementé dashboards ejecutivos que redujeron tiempo de toma de decisiones en 40%
-- 👥 Lideré iniciativas de data-driven optimization que impactaron a 50+ agentes
-- 🤖 Automaticé 80% de reportes manuales usando Python y SQL avanzado
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/delivery-flow-dark.svg">
+  <img src="assets/delivery-flow-light.svg" width="100%" alt="A day on the route: 1. the ERP sync loads orders, routes and promotions at 06:00; 2. each crew receives its route on the driver app; 3. every stop is recorded as delivered, partial or rejected with photo and GPS; 4. promotions and amounts are recalculated; 5. money owed per crew member is settled and closing reports are sent. Live during the day: fleet map, alerts for uncollected amounts over PEN 1,000 and stalled-route detection.">
+</picture>
 
-**Logros Clave:**
-- 🎯 ROI de 300% en proyectos de optimización basados en datos
-- 📞 Mejora del 25% en customer satisfaction score
-- ⚡ Reducción del 35% en tiempo promedio de llamadas
+### Problems solved
 
-### 🏦 ALFIN BANCO
-**💰 Analista Financiero** | *Mar 2022 - Dic 2022*
+| Problem | Solution |
+|:---|:---|
+| **Settlement disputes.** With partial deliveries, nobody could say how much money each driver owed. | Line-by-line settlement against the ERP order, in exact decimals and with real product weights, split per crew member. |
+| **Over-delivered promotional units.** The ERP loses the link between free units and their promotion, so partial rejections gave away too much product. | An engine covering 14 promotion types. It was correct in 2,000 of 2,000 validation cases, where the previous method failed in about 4%, and the app locks the right quantity even offline. |
+| **Lost confirmations in shared routes.** A second crew member's confirmation could be silently lost. | A multi-user delivery log with signed submissions, server-side conflict resolution and a full audit trail. |
+| **Fraud and losses going unnoticed.** Inflated orders, fictitious customers and weight losses were hard to spot. | Automatic signals for orders inflated past the minimum order value, customers flagged by drivers, abnormal weight loss, rejections logged far from the customer and an impossible delivery pace. |
 
-- 🎯 **Reduje la tasa de impagos** mediante modelos de machine learning para scoring crediticio
-- 📋 Desarrollé pipeline ETL automatizado procesando 100K+ transacciones diarias
-- 💡 Creé sistema de early warning para riesgos financieros
-- ⚡ Optimicé procesos de reporting reduciendo tiempo manual en 70%
+<details>
+<summary><b>Four more problems solved</b></summary>
+<br>
 
-**Impacto Medible:**
-- 📉 Reducción del 18% en pérdidas por impagos
-- 🚀 Incremento del 22% en eficiencia operacional
-- 📊 Automatización de 15+ reportes regulatorios
+| Problem | Solution |
+|:---|:---|
+| **Rejections with no follow-up.** Orders recovered after a rejection disappeared from the statistics. | Rejection management that rebuilds history from the audit log and measures recovered sales, plus an instant WhatsApp alert when more than PEN 1,000 is left uncollected. |
+| **No visibility of the fleet.** The office could not see where trucks were or which routes were stuck. | A live fleet map through a secure proxy to the GPS tracker, with each route marked as in progress, stalled, closed or not started. |
+| **Unreliable connectivity.** Unsent deliveries piled up until the evidence on the phone became unreadable. | Offline-first storage with an encrypted local queue, bounded size, one-day retention and automatic sync. |
+| **Manual reporting.** Supervisors and management assembled reports by hand. | Scheduled start, midday and closing reports by email and WhatsApp, with no duplicate sends, and a drill-down from period to driver, customer and product. |
 
----
+</details>
 
-## 🚀 Proyectos Destacados
+### Promotion engine
 
-<div align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/engine-flow-dark.svg">
+  <img src="assets/engine-flow-light.svg" width="100%" alt="Promotion engine decision order: each free-goods line from the ERP invoice is checked as progressive N+M, tiered by range, combo and discount as free goods. A match identifies the promotion and recalculates the bonus on partial rejection; no match goes to manual review and is never guessed. Validated on 2,000 cases, all correct.">
+</picture>
 
-| 🎯 Proyecto | 🛠️ Stack Tecnológico | 📈 Impacto Business |
-|-------------|----------------------|-------------------|
-| **🔄 Data Pipeline Inteligente** | Python, Apache Airflow, AWS S3, Redshift | 60% ↓ tiempo procesamiento |
-| **📈 Dashboard Predictivo 360°** | Power BI, ML.NET, Azure Functions | 15% ↑ conversiones |
-| **🎯 Credit Risk ML Model** | Python, Scikit-learn, XGBoost, MLflow | 18% ↓ default rate |
-| **📞 Real-time Call Analytics** | Genesys Cloud API, Kafka, Elasticsearch | 25% ↑ customer satisfaction |
-| **🤖 Automated Reporting Suite** | Python, Flask, Docker, PostgreSQL | 70% ↓ manual work |
+### Architecture
 
-</div>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/architecture-dark.svg">
+  <img src="assets/architecture-light.svg" width="100%" alt="RutaLiquidador architecture. Data sources: ERP on SQL Server, fleet GPS tracker and OSRM routing with self-hosted Lima maps. Platform core: FastAPI backend with the promotion engine, route settlement and delivery log, offline conflict resolution and audit trail, a scheduler with 12 background jobs, and PostgreSQL 16 with 47 tables. Clients: offline-first React Native driver app, React control tower with 27 views and a WhatsApp gateway. Delivery: Docker Compose, Nginx, GitHub Actions and scripted releases with rollback.">
+</picture>
 
----
+### Engineering
 
-## 📊 GitHub Statistics
+- **Quality:** more than 7,700 automated tests (pytest, Jest, Vitest, Playwright) and mutation testing on pull requests.
+- **Delivery:** six CI workflows gate every release. Releases are scripted with a backup, a smoke test and automatic rollback, with about 15 seconds of downtime.
+- **Performance:** a query rewrite took a critical path from 4.9 s to 7 ms (about 700× faster).
+- **Data-driven decisions:** collisions were measured before the conflict screen was built, and the end-of-day alert time was set from real stop data. An unused job writing 278,000 rows a day was retired.
+- **AI-assisted, review-gated:** I use AI coding tools every day, and every change still has to pass tests, mutation testing and CI.
 
-<div align="center">
-  
-![Italo's GitHub Stats](https://github-readme-stats.vercel.app/api?username=ItaloFabioSinisiQ&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00D9FF&icon_color=00D9FF&text_color=FFFFFF)
+**Stack:** Python · FastAPI · SQLAlchemy · Alembic · PostgreSQL · SQL Server · TypeScript · React · Vite · Tailwind CSS · React Native · Expo · MapLibre · OSRM · Docker · Nginx · GitHub Actions
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=ItaloFabioSinisiQ&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00D9FF&text_color=FFFFFF)
+## Other projects
 
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=ItaloFabioSinisiQ&theme=tokyonight&hide_border=true&background=0D1117&stroke=00D9FF&ring=00D9FF&fire=FF6B6B&currStreakLabel=00D9FF)
+| Project | Outcome |
+|:---|:---|
+| **Ventory Multicanal**<br>Field sales platform | Lets companies verify their field sales teams. It handles selfie and GPS attendance, detects fake locations, rooted devices and impossible travel speeds, and syncs offline sales without ever duplicating one. A fiber internet edition checks coverage on the device.<br><i>FastAPI · PostgreSQL · React Native · React</i> |
+| **Portal de Concursos**<br>Sales contest engine | Turns each contest's rules into read-only ERP queries and recalculates 14 contests every business day. Validated with **zero discrepancies across 281,788 rows**.<br><i>Next.js · FastAPI · SQL Server</i> |
+| **Capturas de Preventa**<br>Pre-sales report bot | Replaced a manual process by delivering 225 report combinations to WhatsApp groups on a schedule, with no duplicate sends. Covered by about 350 tests. In production.<br><i>Python · FastAPI · Playwright · Node.js</i> |
+| **AurenPulse**<br>Internal usage analytics | Shows leadership who uses each internal system, for how long, and who stopped using it. It is read-only at two levels and its login has brute-force protection.<br><i>FastAPI · PostgreSQL · Docker</i> |
+| **AUSPEX**<br>Sales supervisor dashboard | Gives supervisors live team rankings, inactivity alerts and audited access. A migration to Node.js, PostgreSQL and React Native is in progress.<br><i>Google Apps Script · Node.js · TypeScript</i> |
+| **TomaPedidos**<br>Order suggestion engine · in design | Will suggest what to offer each customer from repurchase cycles and basket affinity, validated by replaying nine years of sales history.<br><i>Python · PostgreSQL · LightGBM</i> |
 
-</div>
+These systems belong to the companies I build them for, so the repositories are private. I'm happy to walk through the architecture and code in an interview.
 
----
+## Skills
 
-## 🏆 Certificaciones & Formación
+| Area | Technologies |
+|:---|:---|
+| Backend | Python, FastAPI, SQLAlchemy, Alembic, Pydantic, APScheduler, Node.js, Express, Prisma, REST APIs, JWT |
+| Frontend | TypeScript, React, Next.js, Vite, Tailwind CSS, Leaflet, MapLibre, Recharts, ECharts |
+| Mobile | React Native, Expo, offline-first sync, encrypted local storage, background GPS |
+| Data and BI | PostgreSQL, SQL Server, SQLite, ETL pipelines, ERP integration, Pandas, scikit-learn, Power BI (DAX) |
+| DevOps and quality | Docker, Docker Compose, Nginx, Linux, GitHub Actions, pytest, Jest, Vitest, Playwright, mutation testing |
+| Languages | Python, TypeScript, JavaScript, SQL, Rust |
+| Domains | Logistics and last-mile delivery, field sales, FMCG distribution, credit risk, business intelligence |
 
-<div align="center">
+## Education and certifications
 
-| 🎓 Institución | 📜 Certificación | 🗓️ Estado |
-|---------------|------------------|-----------|
-| **SENCICO** | Administración de Obras | ✅ Completado |
-| **EDTEAM** | Python & Advanced Data Analysis | ✅ Certificado |
-| **EDTEAM** | SQL Database Management Pro | ✅ Certificado |
-| **Microsoft** | Power BI Data Analyst Associate | ✅ Certificado |
-| **EDTEAM** | REST API Development | ✅ Certificado |
-| **Genesys** | Cloud Platform Certified | ✅ Certificado |
-| **Scrum Alliance** | Certified ScrumMaster (CSM) | ✅ Certificado |
-| **AWS** | Solutions Architect Associate | 🎯 En progreso |
+- **Bachelor's in Systems & Computer Engineering** — Universidad Privada del Norte (UPN) <sub>in progress</sub>
+- Microsoft Certified: Power BI Data Analyst Associate (PL-300)
+- Certified ScrumMaster (CSM) — Scrum Alliance
+- Genesys Cloud certification — Genesys
+- Python and Data Analysis · SQL Databases · REST API Development — EDTEAM
 
-</div>
+Currently preparing for AWS Certified Solutions Architect – Associate.
 
 ---
 
-## 🎯 Roadmap 2025
-
-```mermaid
-graph TD
-    A[Q1 2025] --> B[AWS/GCP Professional Cert]
-    A --> C[Advanced MLOps]
-    B --> D[Q2 2025: Team Leadership]
-    C --> D
-    D --> E[Q3 2025: Open Source Contributions]
-    D --> F[Deep Learning Specialization]
-    E --> G[Q4 2025: Tech Conference Speaker]
-    F --> G
-    
-    style A fill:#00D9FF,stroke:#000,stroke-width:2px,color:#000
-    style G fill:#FF6B6B,stroke:#000,stroke-width:2px,color:#fff
-```
-
-**🚀 Objetivos Estratégicos:**
-- 🤖 **Deep Learning & NLP:** Especializarme en modelos de lenguaje y computer vision
-- ☁️ **Cloud Architecture:** Obtener certificaciones AWS/GCP Professional
-- 👥 **Technical Leadership:** Liderar equipos multidisciplinarios de Data Science
-- 🌟 **Open Source:** Contribuir a proyectos que impacten la comunidad global
-- 🎤 **Knowledge Sharing:** Ser speaker en conferencias internacionales de tecnología
-
----
-
-## 📈 Contribuciones & Actividad
-
-<div align="center">
-
-![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=ItaloFabioSinisiQ&theme=tokyo-night&bg_color=0D1117&color=00D9FF&line=00D9FF&point=FF6B6B&area=true&hide_border=true)
-
-</div>
-
----
-
-## 🌟 Skills Radar
-
-<div align="center">
-
-```
-         Data Analysis ████████████ 95%
-      Machine Learning ██████████░░ 85%
-     Cloud Computing ███████████░ 90%
-          Visualization ████████████ 95%
-                    SQL ████████████ 95%
-                 Python ███████████░ 90%
-           Leadership ████████░░░░ 70%
-      DevOps/MLOps ███████░░░░░ 60%
-```
-
-</div>
-
----
-
-## 💡 Philosophy & Values
-
-> *"En la era de la información, los datos son el activo más valioso, pero su verdadero poder se libera cuando se transforman en decisiones inteligentes que crean impacto real en las personas."*
-
-**🔑 Principios Fundamentales:**
-- **Data-Driven Decision Making:** Cada decisión debe estar respaldada por evidencia sólida
-- **Continuous Learning:** La tecnología evoluciona, yo también
-- **Collaboration:** Los mejores insights surgen del trabajo en equipo
-- **Ethics in AI:** Responsabilidad y transparencia en cada modelo
-- **Business Impact:** La técnica al servicio de resultados medibles
-
----
-
-## 📫 Let's Connect & Collaborate!
-
-<div align="center">
-
-**🤝 ¿Tienes un proyecto desafiante? ¡Colaboremos!**
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Conectar-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0077B5)](https://www.linkedin.com/in/italo-fabio-sinisi-quintana/)
-[![WhatsApp](https://img.shields.io/badge/WhatsApp-Contactar-25D366?style=for-the-badge&logo=whatsapp&logoColor=white&labelColor=25D366)](https://wa.me/51977170609)
-[![Email](https://img.shields.io/badge/Email-Escribir-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=D14836)](mailto:sinisiquintanaitalo@gmail.com)
-
----
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer&text=Thanks%20for%20visiting!&fontSize=30&fontColor=fff&animation=twinkling"/>
-
-**⭐ Si mi trabajo te inspira, no olvides dar una estrella a mis repositorios ⭐**
-
-*"Los datos son el nuevo petróleo, pero la analítica es la refinería que crea valor real"* 📊✨
-
----
-
-<div align="center">
-<sub>🚀 Built with passion by <a href="https://github.com/ItaloFabioSinisiQ">Italo Sinisi</a> | Last updated: June 2025</sub>
-</div>
-
-</div>
+<p align="center">
+  Open to new opportunities. The fastest way to reach me is <a href="mailto:sinisiquintanaitalo@gmail.com">email</a>.
+</p>

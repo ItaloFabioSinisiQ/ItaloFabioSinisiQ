@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="120" viewBox="0 0 880 120" role="img" aria-label="Selected results" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+<title>Selected results</title>
+<g transform="translate(0.0,0)">
+<rect x="0.5" y="0.5" width="210.0" height="119" rx="6" fill="#151b23" stroke="#3d444d"/>
+<text x="18" y="32" font-size="13" font-weight="600" fill="#9198a1">Order rejection rate</text>
+<text x="18" y="74" font-size="30" font-weight="700" fill="#f0f6fc">7% → 1%</text>
+<text x="18" y="100" font-size="12" fill="#9198a1">RutaLiquidador · Auren</text>
+</g>
+<g transform="translate(223.0,0)">
+<rect x="0.5" y="0.5" width="210.0" height="119" rx="6" fill="#151b23" stroke="#3d444d"/>
+<text x="18" y="32" font-size="13" font-weight="600" fill="#9198a1">Sales conversion</text>
+<text x="18" y="74" font-size="30" font-weight="700" fill="#f0f6fc">+15%</text>
+<text x="18" y="100" font-size="12" fill="#9198a1">Predictive analytics · UBYCALL</text>
+</g>
+<g transform="translate(446.0,0)">
+<rect x="0.5" y="0.5" width="210.0" height="119" rx="6" fill="#151b23" stroke="#3d444d"/>
+<text x="18" y="32" font-size="13" font-weight="600" fill="#9198a1">Credit default losses</text>
+<text x="18" y="74" font-size="30" font-weight="700" fill="#f0f6fc">−18%</text>
+<text x="18" y="100" font-size="12" fill="#9198a1">Credit scoring · Alfin Banco</text>
+</g>
+<g transform="translate(669.0,0)">
+<rect x="0.5" y="0.5" width="210.0" height="119" rx="6" fill="#151b23" stroke="#3d444d"/>
+<text x="18" y="32" font-size="13" font-weight="600" fill="#9198a1">Reports automated</text>
+<text x="18" y="74" font-size="30" font-weight="700" fill="#f0f6fc">80%</text>
+<text x="18" y="100" font-size="12" fill="#9198a1">Python and SQL · UBYCALL</text>
+</g>
+</svg>
