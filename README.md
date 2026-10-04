@@ -39,19 +39,22 @@ My background is in data analysis, so I start each system from the business metr
   <img src="assets/case-metrics-light.svg" width="100%" alt="RutaLiquidador at a glance: 207 REST API endpoints; more than 7,700 automated tests; 47 PostgreSQL tables and 60 migrations; driver app rolled out to 43 devices.">
 </picture>
 
-#### The problem
+#### Context
 
-Every morning the company dispatches trucks across Lima, each with a crew of three to four people and dozens of stops. The office needed a reliable, real-time view of what was delivered, what was rejected and why, and where each truck was. Each route also had to be settled against returns and promotional free goods, a process that is slow and error-prone when done by hand.
+Every morning the company dispatches trucks across Lima. Each truck carries a crew of three to four people (driver, settlement clerk and helpers) and dozens of stops. Measured over real routes, mobile signal is available only about 64% of the shift. The office needed to know in real time what was delivered, what was rejected and why, where each truck was, and exactly how much money each crew member had to hand in at the end of the day.
 
-#### The solution
+#### Problems solved
 
-A single platform that connects the ERP, the trucks and the office:
-
-- **Driver app (React Native).** Crews receive the day's orders and navigate their route. They confirm each stop as delivered, partially delivered or rejected, with photo evidence, GPS position and line-level quantities. The app works fully offline, encrypts local data with AES-256 and syncs automatically when coverage returns.
-- **Operations control tower (React).** 27 views for dispatchers and management: a live fleet map, activity timelines per truck, delivery review, rejection management, route settlement per crew member, attendance verification, and drill-down reporting from period to driver, customer and product.
-- **Promotion identification engine.** The ERP exports invoices without the link between each free-goods line and the promotion that generated it. The engine rebuilds that link across 14 promotion types (progressive, tiered, combos and discounts). When a customer rejects part of an order, it recalculates the bonus that still applies, and the mobile app enforces that quantity even offline.
-- **Multi-user delivery log.** Several crew members can record deliveries on the same route at once. Conflicts are detected and resolved on the server, and every correction is kept in an audit trail with before and after values.
-- **Integrations.** Read-only synchronization with the SQL Server ERP, live truck positions from the GPS tracker, road routing with OSRM on self-hosted Lima maps, and WhatsApp alerts for rejections and partial deliveries.
+| Problem | Solution |
+|---|---|
+| **Settlement disputes.** With partial deliveries, nobody could say exactly how much money a driver owed. | Line-by-line settlement against the ERP order in exact decimal arithmetic, using the real weight of weighed products, with the amount owed by **each crew member**. |
+| **Lost deliveries in multi-person crews.** The original design assumed one person per truck, so a second crew member's confirmation could be silently lost. | An append-only, multi-user delivery log. Each submission carries a signature so network retries never count twice, and conflicts are detected and resolved on the server with a full audit trail. |
+| **Over-delivered free goods.** The ERP exports free-goods lines without the promotion that generated them, so partial rejections led to giving away too much product. | A promotion identification engine covering **14 promotion types**. It recalculated **2,000 of 2,000** validation cases correctly, where the previous approach failed in about 4%. The driver app can lock the correct free quantity, even offline. |
+| **Rejections with no follow-up.** Rejected orders that were later recovered disappeared from the statistics. | Rejection management that rebuilds history from the audit log and measures recovered sales, plus an instant **WhatsApp alert when an uncollected amount exceeds S/ 1,000**. |
+| **Commercial fraud and losses.** Inflated orders, fictitious customers and weight losses were hard to detect. | Automatic signals: orders inflated to pass the minimum ticket, customers flagged by drivers for review, weight loss above the expected rate for frozen products, rejections recorded more than 100 m from the customer, and deliveries logged at an impossible pace. |
+| **No visibility of the fleet.** The office could not see where trucks were or which routes were stuck. | A live fleet map through a secure proxy to the GPS tracker, with each route classified as in progress, stalled, closed or not started. |
+| **Unreliable connectivity.** Without signal, unsent deliveries piled up until the evidence on the phone became unreadable. | An offline-first driver app with an encrypted local queue, bounded storage and a one-day retention policy, which syncs automatically when coverage returns. |
+| **Manual reporting.** Supervisors and management assembled reports by hand. | Scheduled start, midday and closing reports by email and WhatsApp, protected against duplicate sends, and a management drill-down from period to driver, customer and product. |
 
 #### Architecture
 
@@ -65,13 +68,15 @@ A single platform that connects the ERP, the trucks and the office:
 - **Testing:** more than 7,700 automated tests across backend (pytest), mobile (Jest) and web (Vitest and Playwright end-to-end), plus mutation testing on each pull request to prove the tests catch real defects.
 - **Continuous delivery:** six GitHub Actions workflows gate every release. The deployment kit runs pre-flight checks, a database backup, a smoke test and an automatic rollback path, with about 15 seconds of downtime per release.
 - **Performance:** a database audit replaced a non-indexable query pattern used in 16 places, cutting response time from 4.9 s to 7 ms (about 700× faster). Background jobs were moved out of the web process to remove a concurrency bottleneck.
-- **Reliability and security:** exact decimal arithmetic for money, row locking and version tokens for offline conflicts, server-side permission checks, JWT sessions with refresh, rate limiting and periodic security, performance and financial audits.
+- **Reliability and security:** exact decimal arithmetic for money, row locking and version tokens for offline conflicts, server-side permission checks, JWT sessions with refresh, rate limiting, and security, performance and financial audits reviewed by independent passes.
+- **Data-driven decisions:** features are measured before they are built or kept. A collision counter ran in production before the conflict-resolution screen was built, and the closing alert hour was set from the 90th percentile of the last stop of the day. An analytics job that wrote 278,000 rows a day to a screen nobody opened was retired.
 
 #### Results
 
 - **Order rejection rate reduced from 7% to 1%.**
 - Real-time GPS visibility of the whole truck fleet and of served versus pending stops, which improved delivery effectiveness and route times.
-- Faster, auditable route settlement, including promotional free goods.
+- Exact, auditable settlement per crew member, including promotional free goods.
+- Early detection of commercial fraud signals and of high-value uncollected deliveries.
 
 **Stack:** Python · FastAPI · SQLAlchemy (async) · Alembic · PostgreSQL 16 · SQL Server · APScheduler · TypeScript · React 18 · Vite · Tailwind · Leaflet · React Native · Expo · MapLibre · OSRM · Docker · Nginx · GitHub Actions
 
@@ -79,14 +84,14 @@ A single platform that connects the ERP, the trucks and the office:
 
 | Project | Description | Technologies |
 |---|---|---|
-| **Ventory Multicanal** | Offline-first field sales platform with a mobile app for sellers and supervisors and an administration dashboard. Includes encrypted on-device storage, GPS audit with fake-location detection and device binding. | FastAPI, PostgreSQL, React Native, React, Docker |
-| **Portal de Concursos** | Sales incentive platform. Managers define contest rules, and an engine translates them into read-only ERP queries that rank every seller and calculate prizes. | Next.js, FastAPI, SQL Server, Docker |
-| **TomaPedidos** | Suggested-order recommendation engine for field sellers, based on repurchase cycles, market-basket affinity and an ML ranker backtested on nine years of sales. *In development.* | Python, PostgreSQL, machine learning |
-| **AUSPEX** | Sales supervisor dashboard with real-time KPIs, team rankings and risk alerts. Migrated from Google Apps Script to a typed web and mobile stack. | Node.js, TypeScript, Prisma, PostgreSQL, React Native |
-| **AurenPulse** | Usage analytics for leadership: who uses each internal system, how often and for how long, with activity heatmaps, churn detection and Excel export. | FastAPI, PostgreSQL, Docker |
-| **Capturas de Preventa** | Scheduled reporting service that renders pre-sales tables per supervisor and category and delivers them to WhatsApp groups, with tests that keep the figures identical to the source. | Python, FastAPI, Playwright, Node.js, Docker |
+| **Ventory Multicanal** | **Problem:** companies with field sales teams could not verify attendance, location or the sales their sellers reported. **Solution:** an offline-first platform with a mobile app and an administration panel: selfie and GPS attendance, fake-location and rooted-device detection, a server-side check for impossible travel speeds, device binding, encrypted on-device storage, and idempotent sync that never duplicates a sale. A variant for home fiber internet sales adds on-device coverage-map validation and partner APIs for sales export and targets. | FastAPI, PostgreSQL, React Native, React, Docker |
+| **Portal de Concursos** | **Problem:** monthly sales contests were configured and tracked by hand. **Solution:** managers define each contest's rules (products, groups, quotas, tiers and caps) and an engine turns them into read-only ERP queries that compute each seller's progress and prize. It recalculates 14 contests every business day and was validated with **zero discrepancies across 281,788 rows**. | Next.js, FastAPI, SQL Server, SQLite, Docker |
+| **Capturas de Preventa** | **Problem:** supervisors needed pre-sales tables on WhatsApp for 225 supervisor and category combinations, too many to capture by hand. **Solution:** a scheduled service that rebuilds each table from the reporting API, renders it as an image and delivers it to WhatsApp groups. It uses rate limiting to protect the sending number, guarantees no duplicate sends and has about 350 tests, including a golden test that keeps the figures identical to the dashboard. In production. | Python, FastAPI, Playwright, Node.js, Docker |
+| **AurenPulse** | **Problem:** leadership did not know who actually used the company's internal systems. **Solution:** a usage analytics panel showing who is online, time spent per system and person, systems nobody uses, hour-by-day heatmaps and people who stopped logging in, with Excel export. It is read-only at two levels (a SELECT-only database role and read-only transactions) and uses signed sessions with brute-force lockout. | FastAPI, PostgreSQL, Docker |
+| **AUSPEX** | **Problem:** sales supervisors had no live view of their teams. **Solution:** a supervisor dashboard on Google Apps Script with role-based access, inactivity alerts, rankings, multi-brand theming and an audit log of access and exports. A migration to a Node.js, TypeScript and PostgreSQL backend with a React Native app is in progress. | Google Apps Script, Node.js, TypeScript, Prisma, React Native |
+| **TomaPedidos** | **Problem:** field sellers decide what to offer each customer from memory. **Solution (in design):** a suggested-order engine combining repurchase cycles, market-basket affinity and a gradient-boosted ranker, to be validated by replaying nine years of sales history, with suggestions precomputed nightly so the app works offline. | Python, PostgreSQL, LightGBM |
 
-These systems run in production, so their repositories are private. Architecture and code walkthroughs are available on request.
+These systems are built for the companies I work with, so their repositories are private. Architecture and code walkthroughs are available on request.
 
 ## Technical skills
 
