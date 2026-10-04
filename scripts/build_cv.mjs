@@ -1,4 +1,4 @@
-// Build the CV as PDF in English and Spanish:
+// Build the CV as a formal black-and-white PDF in English and Spanish:
 //   cv/Italo-Sinisi-CV-EN.pdf and cv/Italo-Sinisi-CV-ES.pdf
 //
 // Requires Node and Playwright (npm i playwright). Run from the repo root:
@@ -195,41 +195,34 @@ const CV = {
 const css = `
 @font-face { font-family: 'Inter'; src: url(data:font/woff2;base64,${FONT_SANS}) format('woff2'); font-weight: 100 900; }
 @font-face { font-family: 'Source Serif'; src: url(data:font/woff2;base64,${FONT_SERIF}) format('woff2'); font-weight: 200 900; }
-@page { size: A4; margin: 14mm 15mm 14mm 15mm; }
-:root { --ink: #1f2328; --ink2: #59636e; --line: #d0d7de; --accent: #0969da; --panel: #f6f8fa; }
+@page { size: A4; margin: 16mm 17mm 15mm 17mm; }
+:root { --ink: #000; --ink2: #3a3a3a; --rule: #000; }
 * { box-sizing: border-box; }
-body { margin: 0; font-family: 'Inter', sans-serif; font-size: 9.2pt; line-height: 1.45; color: var(--ink); }
+body { margin: 0; font-family: 'Source Serif', Georgia, serif; font-size: 10pt; line-height: 1.42; color: var(--ink); }
 a { color: inherit; text-decoration: none; }
-header { display: flex; align-items: center; gap: 7mm; padding-bottom: 5mm; border-bottom: 1.2pt solid var(--accent); }
-header img { width: 27mm; height: 27mm; border-radius: 50%; object-fit: cover; outline: 0.9pt solid var(--accent); outline-offset: 1.6pt; }
-h1 { font-family: 'Source Serif', serif; font-weight: 500; font-size: 25pt; line-height: 1.05; margin: 0 0 1.6mm; letter-spacing: -0.2pt; }
-.title { font-weight: 600; font-size: 11.5pt; margin: 0 0 2mm; }
-.contact { color: var(--ink2); font-size: 8.4pt; display: flex; flex-wrap: wrap; column-gap: 3.2mm; margin-top: 0.6mm; }
-.contact span + span::before { content: '·'; margin-right: 3.2mm; color: var(--line); }
+header { display: flex; align-items: center; gap: 6mm; padding-bottom: 4mm; border-bottom: 0.9pt solid var(--rule); }
+header img { width: 24mm; height: 24mm; border-radius: 50%; object-fit: cover; filter: grayscale(1) contrast(1.05); }
+h1 { font-weight: 600; font-size: 22pt; line-height: 1.1; margin: 0 0 1.2mm; letter-spacing: 0.3pt; text-transform: uppercase; }
+.title { font-size: 11.5pt; margin: 0 0 1.8mm; }
+.contact { font-family: 'Inter', sans-serif; color: var(--ink2); font-size: 8.4pt; display: flex; flex-wrap: wrap; column-gap: 2.6mm; margin-top: 0.5mm; }
+.contact span + span::before { content: '|'; margin-right: 2.6mm; color: #9a9a9a; }
 section { margin-top: 5mm; }
-h2 { break-after: avoid; font-size: 7.8pt; font-weight: 700; letter-spacing: 1.1pt; text-transform: uppercase; color: var(--accent); margin: 0 0 2.2mm; }
-.summary { margin: 0; color: var(--ink); }
-.results { display: grid; grid-template-columns: repeat(4, 1fr); border: 0.8pt solid var(--line); border-radius: 2mm; background: var(--panel); }
-.results div { padding: 2.6mm 3.6mm; }
-.results div + div { border-left: 0.8pt solid var(--line); }
-.results b { display: block; font-size: 15pt; font-weight: 700; line-height: 1.1; }
-.results span { color: var(--ink2); font-size: 8pt; }
-.job { margin-bottom: 3.2mm; break-inside: avoid; }
+h2 { break-after: avoid; font-size: 10.5pt; font-weight: 600; letter-spacing: 1.4pt; text-transform: uppercase; margin: 0 0 2.4mm; padding-bottom: 1mm; border-bottom: 0.6pt solid var(--rule); }
+.summary { margin: 0; }
+.job { margin-bottom: 3.4mm; break-inside: avoid; }
 .job-head { display: flex; justify-content: space-between; align-items: baseline; gap: 4mm; }
-.job-head .role { font-weight: 600; font-size: 10pt; }
-.job-head .dates { color: var(--ink2); font-size: 8.4pt; white-space: nowrap; }
-.org { color: var(--ink2); font-size: 8.6pt; margin-bottom: 1mm; }
-ul { margin: 0; padding-left: 4mm; }
-li { margin: 0 0 0.9mm; }
-li::marker { color: var(--accent); }
+.job-head .role { font-weight: 600; font-size: 10.5pt; }
+.job-head .dates { font-size: 9.5pt; white-space: nowrap; }
+.org { color: var(--ink2); margin-bottom: 1mm; }
+ul { margin: 0; padding-left: 4.5mm; }
+li { margin: 0 0 0.8mm; }
+li::marker { color: var(--ink); }
 li b, .summary b { font-weight: 600; }
 .projects, .skills, .education { break-inside: avoid; }
-.grid { display: grid; grid-template-columns: 37mm 1fr; column-gap: 4mm; row-gap: 1.3mm; }
+.grid { display: grid; grid-template-columns: 38mm 1fr; column-gap: 4mm; row-gap: 1.2mm; }
 .grid .k { font-weight: 600; }
-.grid .v { color: var(--ink); }
 .projects .v .tech { color: var(--ink2); }
-.edu { display: grid; grid-template-columns: 1fr auto; column-gap: 4mm; row-gap: 1.1mm; }
-.edu .k { font-weight: 500; }
+.edu { display: grid; grid-template-columns: 1fr auto; column-gap: 4mm; row-gap: 1mm; }
 .edu .v { color: var(--ink2); text-align: right; }
 `;
 
@@ -261,7 +254,6 @@ function render(c) {
     </div>
   </header>
   <section><h2>${c.summaryTitle}</h2><p class="summary">${c.summary}</p></section>
-  <section><h2>${c.resultsTitle}</h2><div class="results">${c.results.map(([v, l]) => `<div><b>${v}</b><span>${l}</span></div>`).join('')}</div></section>
   <section><h2>${c.experienceTitle}</h2>${jobs}</section>
   <section class="projects"><h2>${c.projectsTitle}</h2><div class="grid">${c.projects.map(([n, d, t]) => `<div class="k">${n}</div><div class="v">${d} · <span class="tech">${t}</span></div>`).join('')}</div></section>
   <section class="skills"><h2>${c.skillsTitle}</h2><div class="grid">${c.skills.map(([k, v]) => `<div class="k">${k}</div><div class="v">${v}</div>`).join('')}</div></section>
