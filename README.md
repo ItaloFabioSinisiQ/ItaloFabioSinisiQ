@@ -3,11 +3,6 @@
   <img src="assets/header-light.svg" width="100%" alt="Terminal con el comando whoami: Italo Fabio Sinisi Quintana. Full Stack, Backend Python/FastAPI y Datos. Lima, Perú (GMT-5), más de 5 años en software y datos. Estado: RutaLiquidador en producción. Lenguaje favorito: Rust.">
 </picture>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/contributions-dark.svg">
-  <img src="assets/contributions-light.svg" width="100%" alt="Mapa de calor de mis contribuciones en GitHub durante el último año, semana a semana, con el total y las rachas. Se actualiza a diario.">
-</picture>
-
 Construyo y opero las plataformas internas del área de Inteligencia de Negocios de una distribuidora de consumo masivo en Perú: **logística de última milla**, **fuerza de ventas** y **BI**. Backend en Python/FastAPI, frontends en React, apps móviles en React Native.
 Diseño cada sistema a partir de la métrica de negocio que debe mejorar, y la mido cuando ya está en producción.
 
