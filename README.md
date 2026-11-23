@@ -1,6 +1,11 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
-  <img src="assets/header-light.svg" width="100%" alt="Terminal con el comando whoami: Italo Fabio Sinisi Quintana. Full Stack, Backend Python/FastAPI y Datos. Lima, Perú (GMT-5), más de 5 años en software y datos. Estado: RutaLiquidador en producción.">
+  <img src="assets/header-light.svg" width="100%" alt="Terminal con el comando whoami: Italo Fabio Sinisi Quintana. Full Stack, Backend Python/FastAPI y Datos. Lima, Perú (GMT-5), más de 5 años en software y datos. Estado: RutaLiquidador en producción. Lenguaje favorito: Rust.">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/contributions-dark.svg">
+  <img src="assets/contributions-light.svg" width="100%" alt="Mapa de calor de mis contribuciones en GitHub durante el último año, semana a semana, con el total y las rachas. Se actualiza a diario.">
 </picture>
 
 Construyo y opero las plataformas internas del área de Inteligencia de Negocios de una distribuidora de consumo masivo en Perú: **logística de última milla**, **fuerza de ventas** y **BI**. Backend en Python/FastAPI, frontends en React, apps móviles en React Native.
@@ -18,7 +23,8 @@ building:
   - inteligencia de negocios
 daily_stack: [Python, FastAPI, PostgreSQL, TypeScript, React, React Native, Docker]
 practices: [CI/CD, contenedores, pruebas automatizadas, mutation testing]
-exploring: [Rust, Android nativo (Kotlin)]
+favorite_language: Rust
+exploring: [Android nativo (Kotlin)]
 ```
 
 ## RutaLiquidador
@@ -27,31 +33,20 @@ exploring: [Rust, Android nativo (Kotlin)]
 
 Plataforma web y móvil para el reparto diario de pedidos: seguimiento de entregas, control GPS de la flota en tiempo real y cierre de cada ruta. Redujo la tasa de rechazo de pedidos **de 7% a 1%**.
 
-```mermaid
-flowchart LR
-  app["App móvil<br/>React Native · Expo"]
-  web["Web de oficina<br/>React · Vite · Tailwind CSS<br/>MapLibre"]
-  ci["GitHub Actions<br/>CI/CD"]
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/architecture-dark.svg">
+  <img src="assets/architecture-light.svg" width="100%" alt="Arquitectura de RutaLiquidador. La app del chofer (React Native, Expo, offline-first con cola cifrada, GPS en segundo plano, mapa MapLibre) y la web de oficina (React, Vite, Tailwind, mapa Leaflet, mapa en vivo por polling cada 3 segundos) entran por Nginx, única entrada de un stack Docker Compose. Dentro del stack: la API en FastAPI con SQLAlchemy async, Alembic y JWT, que también sirve la web; un scheduler con APScheduler que sincroniza el ERP y envía reportes y alertas; PostgreSQL 16 como sistema de registro; OSRM para ruteo, accesible solo a través de la API; un servidor de teselas con el mapa de Lima; y un gateway de WhatsApp en Node.js. Fuera del stack, el ERP en SQL Server se consulta en modo solo lectura. GitHub Actions ejecuta las pruebas y publica imágenes de contenedor con cada tag de versión; el despliegue es un pull manual.">
+</picture>
 
-  subgraph docker["Docker"]
-    nginx["Nginx"]
-    api["API<br/>Python · FastAPI<br/>SQLAlchemy · Alembic"]
-  end
+**Un día de reparto**
 
-  osrm["OSRM<br/>ruteo"]
-  pg[("PostgreSQL")]
-  mssql[("SQL Server")]
+1. El scheduler trae los despachos del día desde el ERP (solo lectura) y los copia a PostgreSQL.
+2. El chofer carga su ruta y la app la guarda en el teléfono.
+3. Confirma cada entrega con foto; si no hay señal, queda en cola y se reintenta. Salen alertas por WhatsApp.
+4. El GPS en segundo plano envía las posiciones por lotes y la oficina ve la flota en el mapa.
+5. El chofer cierra la ruta y se liquida; el scheduler envía los reportes y avisa de las rutas sin cerrar.
 
-  app -->|entregas · GPS| nginx
-  web --> nginx
-  nginx --> api
-  api --> pg
-  api --> mssql
-  api --> osrm
-  ci -.->|build y despliegue| docker
-```
-
-<sub>Stack: Python · FastAPI · SQLAlchemy · Alembic · PostgreSQL · SQL Server · TypeScript · React · Vite · Tailwind CSS · React Native · Expo · MapLibre · OSRM · Docker · Nginx · GitHub Actions</sub>
+<sub>Stack: Python · FastAPI · SQLAlchemy · Alembic · PostgreSQL · SQL Server · TypeScript · React · Vite · Tailwind CSS · Leaflet (web) · React Native · Expo · MapLibre (móvil) · OSRM · Docker Compose · Nginx · GitHub Actions</sub>
 
 ## Impacto medido
 
@@ -77,7 +72,7 @@ flowchart LR
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/stack-dark.svg">
-  <img src="assets/stack-light.svg" width="100%" alt="Stack. Backend: Python, FastAPI, SQLAlchemy, Alembic, Pydantic, APScheduler, Node.js, Express, Prisma, APIs REST, JWT. Frontend: TypeScript, React, Next.js, Vite, Tailwind CSS, Leaflet, MapLibre, Recharts, ECharts. Móvil: React Native, Expo, offline-first, almacenamiento local cifrado, GPS en segundo plano. Datos y BI: PostgreSQL, SQL Server, SQLite, pipelines ETL, integración con ERP, Pandas, scikit-learn, Power BI (DAX). DevOps y calidad: Docker, Docker Compose, Nginx, Linux, GitHub Actions, pytest, Jest, Vitest, Playwright, mutation testing. Lenguajes: Python, TypeScript, JavaScript, SQL, Rust.">
+  <img src="assets/stack-light.svg" width="100%" alt="Stack. Backend: Python, FastAPI, SQLAlchemy, Alembic, Pydantic, APScheduler, Node.js, Express, Prisma, APIs REST, JWT. Frontend: TypeScript, React, Next.js, Vite, Tailwind CSS, Leaflet, MapLibre, Recharts, ECharts. Móvil: React Native, Expo, offline-first, almacenamiento local cifrado, GPS en segundo plano. Datos y BI: PostgreSQL, SQL Server, SQLite, pipelines ETL, integración con ERP, Pandas, scikit-learn, Power BI (DAX). DevOps y calidad: Docker, Docker Compose, Nginx, Linux, GitHub Actions, pytest, Jest, Vitest, Playwright, mutation testing. Lenguajes: Rust (favorito), Python, TypeScript, JavaScript, SQL.">
 </picture>
 
 <sub>Sectores: logística y reparto de última milla · fuerza de ventas · consumo masivo · riesgo crediticio · inteligencia de negocios</sub>
