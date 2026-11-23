@@ -86,6 +86,7 @@ const CV = {
     ],
     skillsTitle: 'Habilidades',
     skills: [
+      ['Lenguajes', 'Python, TypeScript, JavaScript, SQL, Rust'],
       ['Backend', 'Python, FastAPI, SQLAlchemy, Alembic, Pydantic, Node.js, Express, Prisma, APIs REST, JWT'],
       ['Frontend', 'TypeScript, React, Next.js, Vite, Tailwind CSS, Leaflet, MapLibre, Recharts'],
       ['Móvil', 'React Native, Expo, sincronización offline-first, almacenamiento cifrado, GPS en segundo plano'],
