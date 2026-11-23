@@ -96,7 +96,8 @@ def extract_calendar(payload):
     if not isinstance(payload, dict):
         raise CalendarError("el JSON no es una respuesta GraphQL")
     if payload.get("errors"):
-        messages = "; ".join(str(e.get("message", e)) for e in payload["errors"])
+        messages = "; ".join(
+            str(e.get("message", e)) if isinstance(e, dict) else str(e) for e in payload["errors"])
         raise CalendarError(f"la API de GitHub devolvió errores: {messages}")
     try:
         user = payload["data"]["user"]
@@ -154,10 +155,12 @@ def month_labels(weeks):
     for i, week in enumerate(weeks):
         month = int(week["contributionDays"][0]["date"][5:7])
         if month != previous:
-            # Skip a label that would collide with the one before it.
-            if i - last_index >= 3:
-                labels.append((i, MONTHS[month - 1]))
-                last_index = i
+            # A label too close to the one before it replaces it: the earlier
+            # one belongs to a partial month at the left edge.
+            if labels and i - last_index < 3:
+                labels.pop()
+            labels.append((i, MONTHS[month - 1]))
+            last_index = i
             previous = month
     return labels
 
@@ -229,8 +232,6 @@ def render(calendar, c):
         out.append(f'<rect x="{sx + level*STEP}" y="{ly}" width="{CELL}" height="{CELL}" rx="2.5" fill="{colour}"/>')
     out.append(f'<text x="{sx - 8}" y="{ly + 10}" text-anchor="end" font-family="{MONO}" font-size="11.5" '
                f'fill="{c["muted"]}">menos</text>')
-    out.append(f'<text x="{GRID_X}" y="{ly + 10}" font-family="{MONO}" font-size="11.5" fill="{c["muted"]}">'
-               f'{days[0]["date"]} → {days[-1]["date"]}</text>')
     out.append("</svg>\n")
     return "\n".join(out)
 
