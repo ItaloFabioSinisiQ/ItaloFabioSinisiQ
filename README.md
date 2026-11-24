@@ -58,9 +58,19 @@ Además, un bot de IA en WhatsApp analiza los comentarios de los vendedores y re
 |:---|:---|:---|
 | **Ventory Multicanal** | Fuerza de ventas en campo: asistencia, registro de ventas y seguimiento de actividad, incluso sin conexión. | `FastAPI` `PostgreSQL` `React Native` `React` |
 | **Capturas de Preventa** | Bot que envía reportes de preventa por WhatsApp de forma programada; reemplazó un proceso manual. En producción. | `Python` `FastAPI` `Playwright` `Node.js` |
-| **Pulse** | Analítica de uso: muestra a la gerencia cómo se usan los sistemas internos. | `FastAPI` `PostgreSQL` `Docker` |
+| **Pulse** | Analítica de uso: muestra a la gerencia cómo se usan los doce sistemas internos (usuarios activos por día, tiempo de permanencia y personas inactivas) y envía el resumen por WhatsApp. | `FastAPI` `PostgreSQL` `Docker` |
 | **AUSPEX** | Dashboard para que los supervisores sigan el desempeño de su equipo de ventas en tiempo real. | `Google Apps Script` `Node.js` `TypeScript` |
 | **TomaPedidos** <sub>en diseño</sub> | Motor de pedido sugerido: recomendará qué productos ofrecer a cada cliente según su historial de compras. | `Python` `PostgreSQL` `LightGBM` |
+
+Otros sistemas construidos en el mismo puesto:
+
+| Sistema | Qué hace | Qué resolvió |
+|:---|:---|:---|
+| **Ventas de campo para un proveedor de internet por fibra óptica** | El vendedor registra la venta en la calle desde el celular; supervisores y administradores la siguen, validan y exportan desde un panel web con mapa, asistencia y rondas. | Reemplazó planillas de cálculo y papeleo manual. |
+| **Consola de códigos QR dinámicos y captación de leads** | Genera QR dinámicos, captura leads con formularios propios y automatiza el contacto por WhatsApp. | Reúne en una sola consola la generación de QR, la captación y el primer contacto. |
+| **Tableros comerciales en línea** | Ventas, stock e inventario, cuentas por cobrar, rechazos y primer pedido con datos en vivo del ERP; vistas separadas por rol para supervisores y vendedores, y un tablero del canal de telecomunicaciones por zona. | Seguimiento del avance comercial con datos actualizados. |
+| **Portal de documentación técnica** | Reúne la documentación de todos los proyectos, con tres roles (lector, editor, administrador), revisión antes de publicar, buscador, descarga por proyecto e historial con vuelta a versiones anteriores. | La documentación se actualiza de forma automática cuando el repositorio recibe cambios en la rama principal. |
+| **Catálogo interno de recursos** | Portal que lista las aplicaciones, tableros y reportes disponibles según el rol de cada persona, con favoritos, etiquetas por área y administración de usuarios. | Cada persona encuentra en un solo portal los recursos que le corresponden. |
 
 > [!NOTE]
 > Estos sistemas pertenecen a las empresas para las que los construyo, por eso los repositorios son privados. Con gusto explico la arquitectura y el código.
@@ -87,6 +97,7 @@ Además, un bot de IA en WhatsApp analiza los comentarios de los vendedores y re
 - Diseño, desarrollo, despliegue y operación de las plataformas internas del área de BI.
 - RutaLiquidador: rechazo de pedidos **de 7% a 1%** y control GPS de la flota en tiempo real.
 - Apps de fuerza de ventas, reportes automáticos por WhatsApp y analítica de uso sobre el ERP.
+- Ventas de campo para un proveedor de internet por fibra óptica, tableros comerciales con datos en vivo del ERP, portal de documentación técnica y catálogo interno de recursos por rol.
 - Introduje contenedores, pipelines de CI/CD y pruebas automatizadas en todos los proyectos.
 
 **Analista de Datos de Call Center** — UBYCALL · <sub>cuenta de Pizza Hut Perú · feb 2023 – nov 2024</sub>

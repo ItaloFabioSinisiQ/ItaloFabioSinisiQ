@@ -46,7 +46,10 @@ const CV = {
         bullets: [
           'Diseño, construyo, despliego y opero las plataformas internas del área de BI con Python, FastAPI, PostgreSQL, React y React Native.',
           '<b>RutaLiquidador</b>, plataforma de reparto de última milla y liquidación de rutas: redujo la tasa de rechazo de pedidos <b>de 7% a 1%</b> y dio control GPS de la flota en tiempo real.',
-          'Reportes automáticos por WhatsApp para 225 combinaciones de supervisor y categoría, en reemplazo de un proceso manual.',
+          'Sistema de ventas de campo para un proveedor de internet por fibra óptica: el vendedor registra la venta desde el celular y la supervisión la sigue, valida y exporta desde un panel web con mapa, asistencia y rondas. Reemplazó planillas de cálculo y papeleo manual.',
+          'Tableros comerciales en línea con datos en vivo del ERP (ventas, stock, cuentas por cobrar, rechazos y primer pedido), con vistas por rol para supervisores y vendedores, y un tablero del canal de telecomunicaciones.',
+          'Reportes comerciales diarios automáticos por WhatsApp, con formato por destinatario y panel de control de entregas, para 225 combinaciones de supervisor y categoría, en reemplazo de un proceso manual.',
+          'Plataformas internas: portal de documentación técnica con tres roles y publicación automática desde el repositorio, auditoría de uso de los doce sistemas internos con resumen por WhatsApp y catálogo de recursos según el rol de cada persona.',
           'Introduje despliegues con Docker, CI/CD con GitHub Actions, mutation testing y despliegues automatizados con backup y rollback (unos 15 s de interrupción). Reduje una consulta crítica de 4.9 s a 7 ms.',
         ],
       },
@@ -83,6 +86,7 @@ const CV = {
       ['RutaLiquidador', 'Reparto, rastreo de flota y liquidación de rutas', 'FastAPI · PostgreSQL · React · React Native'],
       ['Ventory Multicanal', 'Fuerza de ventas con auditoría GPS y sincronización offline', 'FastAPI · PostgreSQL · React Native · React'],
       ['Capturas de Preventa', 'Bot de reportes programados por WhatsApp, unos 350 tests', 'Python · FastAPI · Playwright · Node.js'],
+      ['QR dinámicos y leads', 'Consola que genera códigos QR dinámicos, capta leads con formularios propios y automatiza el contacto por WhatsApp'],
     ],
     skillsTitle: 'Habilidades',
     skills: [
@@ -170,7 +174,7 @@ function render(c) {
   </header>
   <section><h2>${c.summaryTitle}</h2><p class="summary">${c.summary}</p></section>
   <section><h2>${c.experienceTitle}</h2>${jobs}</section>
-  <section class="projects"><h2>${c.projectsTitle}</h2><div class="grid">${c.projects.map(([n, d, t]) => `<div class="k">${n}</div><div class="v">${d} · <span class="tech">${t}</span></div>`).join('')}</div></section>
+  <section class="projects"><h2>${c.projectsTitle}</h2><div class="grid">${c.projects.map(([n, d, t]) => `<div class="k">${n}</div><div class="v">${d}${t ? ` · <span class="tech">${t}</span>` : ''}</div>`).join('')}</div></section>
   <section class="skills"><h2>${c.skillsTitle}</h2><div class="grid">${c.skills.map(([k, v]) => `<div class="k">${k}</div><div class="v">${v}</div>`).join('')}</div></section>
   <section class="education"><h2>${c.educationTitle}</h2><div class="edu">${c.education.map(([k, v]) => `<div class="k">${k}</div><div class="v">${v}</div>`).join('')}</div></section>
   <section><h2>${c.languagesTitle}</h2><div>${c.languages}</div></section>
