@@ -85,8 +85,8 @@ const CV = {
     projects: [
       ['RutaLiquidador', 'Reparto, rastreo de flota y liquidación de rutas', 'FastAPI · PostgreSQL · React · React Native'],
       ['Ventory Multicanal', 'Fuerza de ventas con auditoría GPS y sincronización offline', 'FastAPI · PostgreSQL · React Native · React'],
-      ['Capturas de Preventa', 'Bot de reportes programados por WhatsApp, unos 350 tests', 'Python · FastAPI · Playwright · Node.js'],
-      ['Asistencia facial', 'Asistencia on-premise por reconocimiento facial para unos 500 trabajadores, más de 2400 tests', 'Python · FastAPI · PostgreSQL · ONNX Runtime · Next.js'],
+      ['Capturas de Preventa', 'Bot de reportes por WhatsApp que reemplazó un proceso manual', 'Python · FastAPI · Playwright · Node.js'],
+      ['Asistencia facial', 'Reconocimiento facial on-premise para unos 500 trabajadores, con antisuplantación y lectura de placas', 'Python · FastAPI · ONNX Runtime'],
       ['QR dinámicos y leads', 'Consola que genera códigos QR dinámicos, capta leads con formularios propios y automatiza el contacto por WhatsApp'],
     ],
     skillsTitle: 'Habilidades',
